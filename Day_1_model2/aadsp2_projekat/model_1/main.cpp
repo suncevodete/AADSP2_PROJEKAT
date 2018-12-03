@@ -37,16 +37,17 @@ double temp_right[BLOCK_SIZE];
 double second_order_IIR(double input, double* coefficients, double* x_history, double* y_history) {
 	double output = 0;
 
-	output += coefficients[0] * input;        
-	output += coefficients[1] * x_history[0]; 
-	output += coefficients[2] * x_history[1]; 
-	output -= coefficients[4] * y_history[0]; 
-	output -= coefficients[5] * y_history[1]; 
+	output += *coefficients * input;        /* A0 * x(n)     */
+	output += *(coefficients + 1) * *x_history; /* A1 * x(n-1) */
+	output += *(coefficients + 2) * *(x_history + 1); /* A2 * x(n-2)   */
+	output -= *(coefficients + 4) * *y_history; /* B1 * y(n-1) */
+	output -= *(coefficients + 5) * *(y_history + 1); /* B2 * y(n-2)   */
 
-	y_history[1] = y_history[0];    
-	y_history[0] = output; 
-	x_history[1] = x_history[0]; 
-	x_history[0] = input;         
+
+	*(y_history + 1) = *y_history;    /* y(n-2) = y(n-1) */
+	*y_history = output; /* y(n-1) = y(n)   */
+	*(x_history + 1) = *x_history;  /* x(n-2) = x(n-1) */
+	*x_history = input;          /* x(n-1) = x(n)   */
 
 	return output;
 }
@@ -69,30 +70,13 @@ void processing() {
 	double* temp_nizL3k_ptr = temp_nizL3k;
 	double* temp_nizR3k_ptr = temp_nizR3k;
 
-	for (int i = 0; i < BLOCK_SIZE; i++)
-	{
-		*tempLptr++ = *SBPtr0++;
-		*tempRptr++ = *SBPtr1++;
-	}
-	
-	tempLptr = temp_left;
-	tempRptr = temp_right;
-	SBPtr0 = sampleBuffer[0];
-	SBPtr1 = sampleBuffer[1];
-	
-	// gain uradjen ovde
-	for (int i = 0; i < BLOCK_SIZE; i++)
-	{
-		*tempLptr = *tempLptr++ * INPUT_GAIN;
-		*tempRptr = *tempRptr++ * INPUT_GAIN;
-	}
-
-	tempLptr = temp_left;
-	tempRptr = temp_right;
-
 	// Napravio lpf i hpf za L i R 
 	for (int i = 0; i < BLOCK_SIZE; i++)
 	{
+		*tempLptr = *SBPtr0++;
+		*tempRptr = *SBPtr1++;
+		*tempLptr = *tempLptr * INPUT_GAIN;
+		*tempRptr = *tempRptr * INPUT_GAIN;
 		*temp_nizL11k_ptr = second_order_IIR(*tempLptr, coefficients_11k_lpf, x_history0, y_history0);
 		*temp_nizR11k_ptr = second_order_IIR(*tempRptr, coefficients_11k_lpf, x_history1, y_history1);
 		*temp_nizL5K_ptr = second_order_IIR(*tempLptr++, coefficients_5k_hpf, x_history2, y_history2) * 0.31622776601683794;
@@ -102,7 +86,8 @@ void processing() {
 		*temp_nizL3k_ptr++ += *temp_nizL5K_ptr++;
 		*temp_nizR3k_ptr++ += *temp_nizR5k_ptr++;
 	}
-
+	SBPtr0 = sampleBuffer[0];
+	SBPtr1 = sampleBuffer[1];
 	temp_nizL11k_ptr = temp_nizL11k;
 	temp_nizR11k_ptr = temp_nizR11k;
 	temp_nizL5K_ptr = temp_nizL5k;

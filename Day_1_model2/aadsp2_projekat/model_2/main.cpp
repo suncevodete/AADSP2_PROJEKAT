@@ -40,40 +40,20 @@ DSPfract temp_right[BLOCK_SIZE];
 DSPfract second_order_IIR(DSPfract input, DSPfract* coefficients, DSPfract* x_history, DSPfract* y_history) {
 	DSPfract output = 0;
 
-	output += coefficients[0] * input;        
-	output += coefficients[1] * x_history[0]; 
-	output += coefficients[2] * x_history[1]; 
-	output -= coefficients[4] * y_history[0]; 
-	output -= coefficients[5] * y_history[1]; 
-
-	y_history[1] = y_history[0];    
-	y_history[0] = output; 
-	x_history[1] = x_history[0]; 
-	x_history[0] = input;         
-
-	return output;
-}/*
-DSPfract second_order_IIR(DSPfract input, DSPfract* coefficients, DSPfract* x_history, DSPfract* y_history) {
-	DSPfract output = 0;
-	//pokazivaci na nizove
-	DSPfract *coeff_ptr = coefficients;
-	DSPfract *x_history_ptr = x_history;
-	DSPfract *y_history_ptr = y_history;
-
-	output += *coeff_ptr * input;        
-	output += *(coeff_ptr + 1) * *x_history_ptr; 
-	output += *(coeff_ptr + 2) * *(x_history_ptr + 1); 
-	output -= *(coeff_ptr + 3) * *y_history_ptr; 
-	output -= *(coeff_ptr + 4) * *(y_history_ptr + 1);
+	output += *coefficients * input;        /* A0 * x(n)     */
+	output += *(coefficients + 1) * *x_history; /* A1 * x(n-1) */
+	output += *(coefficients + 2) * *(x_history + 1); /* A2 * x(n-2)   */
+	output -= *(coefficients + 4) * *y_history; /* B1 * y(n-1) */
+	output -= *(coefficients + 5) * *(y_history + 1); /* B2 * y(n-2)   */
 
 
-	*(y_history_ptr + 1) = *y_history_ptr;    
-	*y_history_ptr = output; 
-	*(x_history_ptr + 1) = *x_history_ptr; 
-	*x_history_ptr = input;         
+	*(y_history + 1) = *y_history;    /* y(n-2) = y(n-1) */
+	*y_history = output; /* y(n-1) = y(n)   */
+	*(x_history + 1) = *x_history;  /* x(n-2) = x(n-1) */
+	*x_history = input;          /* x(n-1) = x(n)   */
 
 	return output;
-}*/
+}
 
 void processing() {
 	//pokazivaci na nizove

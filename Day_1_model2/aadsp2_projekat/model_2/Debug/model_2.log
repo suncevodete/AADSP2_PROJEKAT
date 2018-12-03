@@ -1,2 +1,21 @@
-﻿  model_2.vcxproj -> C:\Users\student\Desktop\ra22-2015\Day_1_model2\aadsp2_projekat\model_2\Debug\model_2.exe
-  model_2.vcxproj -> C:\Users\student\Desktop\ra22-2015\Day_1_model2\aadsp2_projekat\model_2\Debug\model_2.pdb (Full PDB)
+﻿  WAVheader.cpp
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\wavheader.cpp(84): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  stdfix_emu.cpp
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\stdfix_emu.cpp(56): warning C4309: 'argument': truncation of constant value
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\stdfix_emu.cpp(310): warning C4309: 'argument': truncation of constant value
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\stdfix_emu.cpp(518): warning C4244: '=': conversion from 'unsigned long' to 'char', possible loss of data
+  main.cpp
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\main.cpp(257): warning C4244: '=': conversion from 'DSPfract' to 'DSPint', possible loss of data
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\main.cpp(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\main.cpp(200): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  fixed_point_math.cpp
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\fixed_point_math.cpp(455): warning C4309: '=': truncation of constant value
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\fixed_point_math.cpp(517): warning C4244: '=': conversion from 'unsigned long' to 'coyote_math::accumulator::guard_t', possible loss of data
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\fixed_point_math.cpp(527): warning C4309: '=': truncation of constant value
+c:\users\student\desktop\ra22-2015\aadsp2_projekat\day_1_model2\aadsp2_projekat\model_2\fixed_point_math.cpp(557): warning C4309: '=': truncation of constant value
+  Generating Code...
+  model_2.vcxproj -> C:\Users\student\Desktop\ra22-2015\AADSP2_PROJEKAT\Day_1_model2\aadsp2_projekat\model_2\Debug\model_2.exe
+  model_2.vcxproj -> C:\Users\student\Desktop\ra22-2015\AADSP2_PROJEKAT\Day_1_model2\aadsp2_projekat\model_2\Debug\model_2.pdb (Full PDB)
