@@ -1,0 +1,8 @@
+﻿  main.cpp
+c:\users\student\desktop\ra22-2015\day_1_model2\aadsp2_projekat\model_1\main.cpp(220): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\student\desktop\ra22-2015\day_1_model2\aadsp2_projekat\model_1\main.cpp(161): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+c:\users\student\desktop\ra22-2015\day_1_model2\aadsp2_projekat\model_1\main.cpp(163): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  model_1.vcxproj -> C:\Users\student\Desktop\ra22-2015\Day_1_model2\aadsp2_projekat\model_1\Debug\model_1.exe
+  model_1.vcxproj -> C:\Users\student\Desktop\ra22-2015\Day_1_model2\aadsp2_projekat\model_1\Debug\model_1.pdb (Full PDB)
