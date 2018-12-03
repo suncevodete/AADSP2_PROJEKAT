@@ -86,6 +86,7 @@ void processing() {
 		*temp_nizL3k_ptr++ += *temp_nizL5K_ptr++;
 		*temp_nizR3k_ptr++ += *temp_nizR5k_ptr++;
 	}
+
 	SBPtr0 = sampleBuffer[0];
 	SBPtr1 = sampleBuffer[1];
 	temp_nizL11k_ptr = temp_nizL11k;

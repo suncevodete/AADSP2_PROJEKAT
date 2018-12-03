@@ -57,7 +57,6 @@ DSPfract second_order_IIR(DSPfract input, DSPfract* coefficients, DSPfract* x_hi
 
 void processing() {
 	//pokazivaci na nizove
-	
 	DSPfract* SBPtr0 = sampleBuffer[0];
 	DSPfract* SBPtr1 = sampleBuffer[1];
 	DSPfract* SBPtr2 = sampleBuffer[2];
@@ -74,79 +73,33 @@ void processing() {
 	DSPfract* temp_nizL3k_ptr = temp_nizL3k;
 	DSPfract* temp_nizR3k_ptr = temp_nizR3k;
 
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
-	{
-		*tempLptr++ = *SBPtr0++;
-		*tempRptr++ = *SBPtr1++;
-	}
-	
-	tempLptr = temp_left;
-	tempRptr = temp_right;
-	SBPtr0 = sampleBuffer[0];
-	SBPtr1 = sampleBuffer[1];
-	
-	// gain uradjen ovde
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
-	{
-		*tempLptr = *tempLptr++ * INPUT_GAIN;
-		*tempRptr = *tempRptr++ * INPUT_GAIN;
-	}
-
-	tempLptr = temp_left;
-	tempRptr = temp_right;
 
 	// Napravio lpf i hpf za L i R 
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
+	for (int i = 0; i < BLOCK_SIZE; i++)
 	{
-		*temp_nizL11k_ptr++ = second_order_IIR(*tempLptr, coefficients_11k_lpf, x_history0, y_history0);
-		*temp_nizR11k_ptr++ = second_order_IIR(*tempRptr, coefficients_11k_lpf, x_history1, y_history1);
-		*temp_nizL5K_ptr++ = second_order_IIR(*tempLptr++, coefficients_5k_hpf, x_history2, y_history2);
-		*temp_nizR5k_ptr++ = second_order_IIR(*tempRptr++, coefficients_5k_hpf, x_history3, y_history3);
-	}
-	tempLptr = temp_left;
-	tempRptr = temp_right;
-	temp_nizL11k_ptr = temp_nizL11k;
-	temp_nizR11k_ptr = temp_nizR11k;
-	temp_nizL5K_ptr = temp_nizL5k;
-	temp_nizR5k_ptr = temp_nizR5k;
-
-	// hpf nad prethodno lpf signalima
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
-	{
-		*temp_nizL3k_ptr++ = second_order_IIR(*temp_nizL11k_ptr++, coefficients_3k_hpf, x_history4, y_history4);
-		*temp_nizR3k_ptr++ = second_order_IIR(*temp_nizR11k_ptr++, coefficients_3k_hpf, x_history5, y_history5);
-	}
-
-	temp_nizL11k_ptr = temp_nizL11k;
-	temp_nizR11k_ptr = temp_nizR11k;
-	temp_nizL5K_ptr = temp_nizL5k;
-	temp_nizR5k_ptr = temp_nizR5k;
-	temp_nizL3k_ptr = temp_nizL3k;
-	temp_nizR3k_ptr = temp_nizR3k;
-
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
-	{
-		*temp_nizL3k_ptr = *temp_nizL3k_ptr++ * 0.6309573444801932;
-		*temp_nizR3k_ptr = *temp_nizR3k_ptr++ * 0.6382634861905486;
-		*temp_nizL5K_ptr = *temp_nizL5K_ptr++ * 0.31622776601683794;
-		*temp_nizR5k_ptr = *temp_nizR5k_ptr++ * 0.33496543915782767;
-	}
-	temp_nizL5K_ptr = temp_nizL5k;
-	temp_nizR5k_ptr = temp_nizR5k;
-	temp_nizL3k_ptr = temp_nizL3k;
-	temp_nizR3k_ptr = temp_nizR3k;
-
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
-	{
+		*tempLptr = *SBPtr0++;
+		*tempRptr = *SBPtr1++;
+		*tempLptr = *tempLptr * INPUT_GAIN;
+		*tempRptr = *tempRptr * INPUT_GAIN;
+		*temp_nizL11k_ptr = second_order_IIR(*tempLptr, coefficients_11k_lpf, x_history0, y_history0);
+		*temp_nizR11k_ptr = second_order_IIR(*tempRptr, coefficients_11k_lpf, x_history1, y_history1);
+		*temp_nizL5K_ptr = second_order_IIR(*tempLptr++, coefficients_5k_hpf, x_history2, y_history2) * 0.31622776601683794;
+		*temp_nizR5k_ptr = second_order_IIR(*tempRptr++, coefficients_5k_hpf, x_history3, y_history3) * 0.33496543915782767;
+		*temp_nizL3k_ptr = second_order_IIR(*temp_nizL11k_ptr++, coefficients_3k_hpf, x_history4, y_history4) * 0.6309573444801932;
+		*temp_nizR3k_ptr = second_order_IIR(*temp_nizR11k_ptr++, coefficients_3k_hpf, x_history5, y_history5) * 0.6382634861905486;
 		*temp_nizL3k_ptr++ += *temp_nizL5K_ptr++;
 		*temp_nizR3k_ptr++ += *temp_nizR5k_ptr++;
 	}
-	
+
+	SBPtr0 = sampleBuffer[0];
+	SBPtr1 = sampleBuffer[1];
+	temp_nizL11k_ptr = temp_nizL11k;
+	temp_nizR11k_ptr = temp_nizR11k;
 	temp_nizL5K_ptr = temp_nizL5k;
 	temp_nizR5k_ptr = temp_nizR5k;
 	temp_nizL3k_ptr = temp_nizL3k;
 	temp_nizR3k_ptr = temp_nizR3k;
-
+	
 	// Ovde odma povezujem na Ls i Rs izlaze 
 	if (MODE == 320)
 	{
