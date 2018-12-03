@@ -1,0 +1,1 @@
+C:\\Users\\student\\Desktop\\ra22-2015\\AADSP2_PROJEKAT\\Day_1_model2\\aadsp2_projekat\\TestStreams\\speech_2ch_2.wav  model1_output_speech_2ch_2.wav 320 0.8912509381337456

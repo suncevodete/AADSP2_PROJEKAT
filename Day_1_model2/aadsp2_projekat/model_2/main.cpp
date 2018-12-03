@@ -36,7 +36,6 @@ DSPfract coefficients_3k_hpf[6] = { 0.60074547832695790000, -1.20149095665391580
 DSPfract temp_left[BLOCK_SIZE];
 DSPfract temp_right[BLOCK_SIZE];
 
-
 DSPfract second_order_IIR(DSPfract input, DSPfract* coefficients, DSPfract* x_history, DSPfract* y_history) {
 	DSPfract output = 0;
 
@@ -45,7 +44,6 @@ DSPfract second_order_IIR(DSPfract input, DSPfract* coefficients, DSPfract* x_hi
 	output += *(coefficients + 2) * *(x_history + 1); /* A2 * x(n-2)   */
 	output -= *(coefficients + 4) * *y_history; /* B1 * y(n-1) */
 	output -= *(coefficients + 5) * *(y_history + 1); /* B2 * y(n-2)   */
-
 
 	*(y_history + 1) = *y_history;    /* y(n-2) = y(n-1) */
 	*y_history = output; /* y(n-1) = y(n)   */

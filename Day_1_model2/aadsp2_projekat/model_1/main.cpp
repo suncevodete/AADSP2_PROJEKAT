@@ -149,6 +149,7 @@ int main(int argc, char* argv[])
 	strcpy(WavOutputName, argv[2]);
 	wav_out = OpenWavFileForRead(WavOutputName, "wb");
 	MODE = atoi(argv[3]);
+	INPUT_GAIN = atoi(argv[4]);
 	//-------------------------------------------------
 
 	// Read input wav header
