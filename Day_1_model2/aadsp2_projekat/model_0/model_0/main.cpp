@@ -3,7 +3,7 @@
 #include <string.h>
 #include "WAVheader.h"
 
-#define BLOCK_SIZE 256
+#define BLOCK_SIZE 16
 #define MAX_NUM_CHANNEL 5
 int MODE;
 double sampleBuffer[MAX_NUM_CHANNEL][BLOCK_SIZE];

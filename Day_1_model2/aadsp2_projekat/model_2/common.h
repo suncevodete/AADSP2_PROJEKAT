@@ -1,6 +1,7 @@
 #ifndef COMMON_H
 #define COMMON_H
-
+#include "stdfix_emu.h"
+#include "fixed_point_math.h"
 /* Basic constants */
 /////////////////////////////////////////////////////////////////////////////////
 // Constant definitions
@@ -9,7 +10,6 @@
 #define MAX_NUM_CHANNEL 5
 #define INPUT_GAIN 0.8912509381337456
 int MODE;
-double INITIAL_GAIN = 0;
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -17,8 +17,8 @@ double INITIAL_GAIN = 0;
 typedef short DSPshort;					/* DSP integer */
 typedef unsigned short DSPushort;		/* DSP unsigned integer */
 typedef int DSPint;						/* native integer */
-typedef double DSPfract;				/* DSP fixed-point fractional */
-typedef double DSPaccum;				/* DSP fixed-point fractional */
+typedef fract DSPfract;				/* DSP fixed-point fractional */
+typedef long_accum DSPaccum;				/* DSP fixed-point fractional */
 
 
 #endif
