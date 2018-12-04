@@ -7,7 +7,7 @@
 #define MAX_NUM_CHANNEL 5
 int MODE;
 double sampleBuffer[MAX_NUM_CHANNEL][BLOCK_SIZE];
-
+double INITIAL_GAIN = 0;
 
 double x_history0[2];
 double y_history0[2];
@@ -46,8 +46,8 @@ double second_order_IIR(double input, double* coefficients, double* x_history, d
 void processing(double niz_L[], double niz_R[]) {
 	// gain uradjen ovde
 	for (int i = 0; i < BLOCK_SIZE; i++) {
-		niz_L[i] = niz_L[i] * 0.8912509381337456;
-		niz_R[i] = niz_R[i] * 0.8912509381337456;
+		niz_L[i] = niz_L[i] * INITIAL_GAIN;
+		niz_R[i] = niz_R[i] * INITIAL_GAIN;
 	}
 	// pomocni nizovi
 	double temp_nizL11k[BLOCK_SIZE];
@@ -131,6 +131,7 @@ int main(int argc, char* argv[])
 	strcpy(WavOutputName, argv[2]);
 	wav_out = OpenWavFileForRead(WavOutputName, "wb");
 	MODE = atoi(argv[3]);
+	INITIAL_GAIN = atof(argv[4]);
 	//-------------------------------------------------
 
 	// Read input wav header

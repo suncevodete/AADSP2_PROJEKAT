@@ -151,6 +151,7 @@ DSPint main(DSPint argc, char* argv[])
 	strcpy(WavOutputName, argv[2]);
 	wav_out = OpenWavFileForRead(WavOutputName, "wb");
 	MODE = atoi(argv[3]);
+	INITIAL_GAIN = atof(argv[4]);
 	//-------------------------------------------------
 
 	// Read input wav header
