@@ -1,8 +1,9 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include "WAVheader.h"
 #include "common.h"
+#include <dsplib\wavefile.h>
+#include <dsplib\timers.h>
 
 DSPfract INITIAL_GAIN = FRACT_NUM(0.0);
 DSPfract sampleBuffer[MAX_NUM_CHANNEL][BLOCK_SIZE];
@@ -75,7 +76,8 @@ void processing() {
 
 
 	// Napravio lpf i hpf za L i R
-	for (int i = 0; i < BLOCK_SIZE; i++)
+	DSPint i;
+	for (i = 0; i < BLOCK_SIZE; i++)
 	{
 		*tempLptr = *SBPtr0++;
 		*tempRptr = *SBPtr1++;
@@ -115,7 +117,8 @@ void processing() {
 	// Ovde odmah povezujem na Ls i Rs izlaze
 	if (MODE == 320)
 	{
-		for (DSPint i = 0; i < BLOCK_SIZE; i++)
+		DSPint i;
+		for (i = 0; i < BLOCK_SIZE; i++)
 		{
 			*SBPtr0 = *temp_nizL3k_ptr;
 			*SBPtr1 = *temp_nizR3k_ptr;
@@ -135,7 +138,8 @@ void processing() {
 		}
 	} else if (MODE == 220)
 	{
-		for (DSPint i = 0; i < BLOCK_SIZE; i++)
+		DSPint i;
+		for (i = 0; i < BLOCK_SIZE; i++)
 		{
 			*SBPtr0++ = *temp_nizL3k_ptr++;
 			*SBPtr1++ = *temp_nizR3k_ptr++;
@@ -143,7 +147,8 @@ void processing() {
 			*SBPtr3++ = *temp_nizR11k_ptr++;
 		}
 	} else {
-		for (DSPint i = 0; i < BLOCK_SIZE; i++)
+		DSPint i;
+		for (i = 0; i < BLOCK_SIZE; i++)
 		{
 			*SBPtr0++ = *tempLptr++;
 			*SBPtr1++ = *tempRptr++;
@@ -154,100 +159,82 @@ void processing() {
 }
 
 
+int main(int argc, char *argv[])
+ {
+    WAVREAD_HANDLE *wav_in;
+    WAVWRITE_HANDLE *wav_out;
 
-DSPint main(DSPint argc, char* argv[])
-{
-	FILE *wav_in = NULL;
-	FILE *wav_out = NULL;
 	char WavInputName[256];
 	char WavOutputName[256];
-	WAV_HEADER inputWAVhdr, outputWAVhdr;
+
+    int nChannels;
+	int bitsPerSample;
+    int sampleRate;
+    int iNumSamples;
+    int i;
 
 	// Init channel buffers
-	for (DSPint i = 0; i < MAX_NUM_CHANNEL; i++)
-	{
-		for (DSPint j = 0; j < BLOCK_SIZE; j++)
-		{
-			sampleBuffer[i][j] = FRACT_NUM(0.0);
-		}
-	}
+	for(i=0; i<MAX_NUM_CHANNEL; i++)
+		memset(&sampleBuffer[i],0,BLOCK_SIZE);
 
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
-	{
-		temp_left[i] = FRACT_NUM(0.0);
-		temp_right[i] = FRACT_NUM(0.0);
-		temp_nizL11k[i] = FRACT_NUM(0.0);
-		temp_nizR11k[i] = FRACT_NUM(0.0);
-		temp_nizL5k[i] = FRACT_NUM(0.0);
-		temp_nizR5k[i] = FRACT_NUM(0.0);
-		temp_nizL3k[i] = FRACT_NUM(0.0);
-		temp_nizR3k[i] = FRACT_NUM(0.0);
-	}
-	// Open input and output wav files
+	// Open input wav file
 	//-------------------------------------------------
-	strcpy(WavInputName, argv[1]);
-	wav_in = OpenWavFileForRead(WavInputName, "rb");
-	strcpy(WavOutputName, argv[2]);
-	wav_out = OpenWavFileForRead(WavOutputName, "wb");
-	MODE = atoi(argv[3]);
-	INITIAL_GAIN = FRACT_NUM(atof(argv[4]));
+	strcpy(WavInputName,"C:\\Users\\student\\Desktop\\ra22-2015\\AADSP2_PROJEKAT\\Day_1_model2\\aadsp2_projekat\\TestStreams\\2ch_lvl_amt_48k.wav");
+	wav_in = cl_wavread_open(WavInputName);
+	if(wav_in == NULL)
+    {
+		//printf("Error: Could not open input wavefile.\n");
+		return -1;
+	}
 	//-------------------------------------------------
 
 	// Read input wav header
 	//-------------------------------------------------
-	ReadWavHeader(wav_in, inputWAVhdr);
+	nChannels = cl_wavread_getnchannels(wav_in);
+    bitsPerSample = cl_wavread_bits_per_sample(wav_in);
+    sampleRate = cl_wavread_frame_rate(wav_in);
+    iNumSamples =  cl_wavread_number_of_frames(wav_in);
 	//-------------------------------------------------
 
-	// Set up output WAV header
+	// Open output wav file
 	//-------------------------------------------------
-	outputWAVhdr = inputWAVhdr;
-	outputWAVhdr.fmt.NumChannels = MAX_NUM_CHANNEL; // change number of channels
-
-	DSPint oneChannelSubChunk2Size = inputWAVhdr.data.SubChunk2Size / inputWAVhdr.fmt.NumChannels;
-	DSPint oneChannelByteRate = inputWAVhdr.fmt.ByteRate / inputWAVhdr.fmt.NumChannels;
-	DSPint oneChannelBlockAlign = inputWAVhdr.fmt.BlockAlign / inputWAVhdr.fmt.NumChannels;
-
-	outputWAVhdr.data.SubChunk2Size = oneChannelSubChunk2Size * outputWAVhdr.fmt.NumChannels;
-	outputWAVhdr.fmt.ByteRate = oneChannelByteRate * outputWAVhdr.fmt.NumChannels;
-	outputWAVhdr.fmt.BlockAlign = oneChannelBlockAlign * outputWAVhdr.fmt.NumChannels;
-
-
-	// Write output WAV header to file
+	strcpy(WavOutputName,"model3_output_speech_2ch_2.wav");
+	wav_out = cl_wavwrite_open(WavOutputName, bitsPerSample, nChannels, sampleRate);
+	if(!wav_out)
+    {
+        //printf("Error: Could not open wavefile.\n");
+        return -1;
+    }
 	//-------------------------------------------------
-	WriteWavHeader(wav_out, outputWAVhdr);
 
 	// Processing loop
 	//-------------------------------------------------	
-	{
-		DSPint sample;
-		DSPint BytesPerSample = inputWAVhdr.fmt.BitsPerSample / 8;
-		const double SAMPLE_SCALE = -(double)(1 << 31);		//2^31
-		DSPint iNumSamples = inputWAVhdr.data.SubChunk2Size / (inputWAVhdr.fmt.NumChannels*inputWAVhdr.fmt.BitsPerSample / 8);
+    {
+		int i;
+		int j;
+		int k;
+		int sample;
 
 		// exact file length should be handled correctly...
-		for (DSPint i = 0; i < iNumSamples / BLOCK_SIZE; i++)
+		for(i=0; i<iNumSamples/BLOCK_SIZE; i++)
 		{
-			for (DSPint j = 0; j < BLOCK_SIZE; j++)
+			for(j=0; j<BLOCK_SIZE; j++)
 			{
-				for (DSPint k = 0; k < inputWAVhdr.fmt.NumChannels; k++)
+				for(k=0; k<nChannels; k++)
 				{
-					sample = 0; //debug
-					fread(&sample, BytesPerSample, 1, wav_in);
-					sample = sample << (32 - inputWAVhdr.fmt.BitsPerSample); // force signextend
-					sampleBuffer[k][j] = sample / SAMPLE_SCALE;				// scale sample to 1.0/-1.0 range
+					sample = cl_wavread_recvsample(wav_in);
+        			sampleBuffer[k][j] = rbits(sample);
 				}
 			}
 
-
 			processing();
 
-			for (DSPint j = 0; j < BLOCK_SIZE; j++)
+			for(j=0; j<BLOCK_SIZE; j++)
 			{
-				for (DSPint k = 0; k < outputWAVhdr.fmt.NumChannels; k++)
+				for(k=0; k<nChannels; k++)
 				{
-					sample = sampleBuffer[k][j].toLong();	// crude, non-rounding
-					sample = sample >> (32 - inputWAVhdr.fmt.BitsPerSample);
-					fwrite(&sample, outputWAVhdr.fmt.BitsPerSample / 8, 1, wav_out);
+					sample = bitsr(sampleBuffer[k][j]);
+					cl_wavwrite_sendsample(wav_out, sample);
 				}
 			}
 		}
@@ -255,9 +242,9 @@ DSPint main(DSPint argc, char* argv[])
 
 	// Close files
 	//-------------------------------------------------	
-	fclose(wav_in);
-	fclose(wav_out);
+    cl_wavread_close(wav_in);
+    cl_wavwrite_close(wav_out);
 	//-------------------------------------------------	
 
-	return 0;
-}
+    return 0;
+ }

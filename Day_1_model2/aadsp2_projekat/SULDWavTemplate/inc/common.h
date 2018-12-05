@@ -1,7 +1,6 @@
 #ifndef COMMON_H
 #define COMMON_H
 #include "stdfix_emu.h"
-#include "fixed_point_math.h"
 /* Basic constants */
 /////////////////////////////////////////////////////////////////////////////////
 // Constant definitions
