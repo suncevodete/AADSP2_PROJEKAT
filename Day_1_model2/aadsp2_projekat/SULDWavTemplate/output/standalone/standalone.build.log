@@ -1,0 +1,51 @@
+============= BUILDING STARTED ============
+  Project: WavTemplate
+===========================================
+Compiling .c files...
+C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/src/WAVheader.cpp
+C:/CirrusDSP/bin/ccc2 C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/src/WAVheader.cpp
+ -S
+ -ruf
+ -fcse
+ -fprc
+ -fcompact
+ -funsafe-loop-optimizations
+ -g
+ -edi
+ -emit-hints
+ -ira
+ -fconst-pool=X
+ -fno0init
+ -femit-asm-struct
+ -cdl
+ -D_TOOLS_VERSION_=0x0701
+ -D_SLOT_=0
+ -D_OVLY_=standalone
+ -D_OVLY_REVISION_=020000
+ -D_VERSION_=00
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -D_TARGET_FAMILY_=crystal32
+ -D_MUI_VERSION_=020000
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -IC:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/inc/
+ -oC:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/WAVheader.s
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+     [exec] "C:/CirrusDSP/include/stdio.h", line 8: warning #1108: #warning directive: Functionality of stdio.h header file is not fully supWARNING: '-unsafe-loop-optimization' is ignored when '-g' option is used!
+     [exec] ported
+     [exec]   #warning Functionality of stdio.h header file is not fully supported
+     [exec]    ^
+     [exec] 
+     [exec] "C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/inc/WAVheader.h", line 2: catastrophic error #5: could not open source file "windows.h"
+     [exec]   #include <windows.h>
+     [exec]                       ^
+     [exec] 
+     [exec] Compilation terminated.
+
+BUILD FAILED
+C:\Users\student\Desktop\ra22-2015\AADSP2_PROJEKAT\Day_1_model2\aadsp2_projekat\SULDWavTemplate\output\standalone\standalone.build.xml:12: exec returned: 1
+
+Total time: 0 seconds
