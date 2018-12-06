@@ -30,7 +30,6 @@
 	.extern _cl_wavread_bits_per_sample
 	.extern _cl_wavread_close
 	.extern _cl_wavread_frame_rate
-	.extern _cl_wavread_getnchannels
 	.extern _cl_wavread_number_of_frames
 	.extern _cl_wavread_open
 	.extern _cl_wavread_recvsample
@@ -43,14 +42,12 @@
 	.public _second_order_IIR
 	.extern _strcpy
 	.extern __div
-	.extern __int_to_laccum
-	.extern __mul_sat_laccum
 	.xdata_ovly
 _INITIAL_GAIN
 	.dw  (0x0)
 	.xdata_ovly
 _MODE
-	.bss (0x1)
+	.dw  (0x140)
 	.xdata_ovly
 __extractedConst_0_1
 	.dw  (0x287a26c5)
@@ -90,153 +87,6 @@ _coefficients_5k_hpf
 	.xdata_ovly
 _sampleBuffer
 	.bss (0x50)
-	.xdata_ovly
-_string_const_0
-	.dw  (0x43)
-	.dw  (0x3a)
-	.dw  (0x5c)
-	.dw  (0x55)
-	.dw  (0x73)
-	.dw  (0x65)
-	.dw  (0x72)
-	.dw  (0x73)
-	.dw  (0x5c)
-	.dw  (0x73)
-	.dw  (0x74)
-	.dw  (0x75)
-	.dw  (0x64)
-	.dw  (0x65)
-	.dw  (0x6e)
-	.dw  (0x74)
-	.dw  (0x5c)
-	.dw  (0x44)
-	.dw  (0x65)
-	.dw  (0x73)
-	.dw  (0x6b)
-	.dw  (0x74)
-	.dw  (0x6f)
-	.dw  (0x70)
-	.dw  (0x5c)
-	.dw  (0x72)
-	.dw  (0x61)
-	.dw  (0x32)
-	.dw  (0x32)
-	.dw  (0x2d)
-	.dw  (0x32)
-	.dw  (0x30)
-	.dw  (0x31)
-	.dw  (0x35)
-	.dw  (0x5c)
-	.dw  (0x41)
-	.dw  (0x41)
-	.dw  (0x44)
-	.dw  (0x53)
-	.dw  (0x50)
-	.dw  (0x32)
-	.dw  (0x5f)
-	.dw  (0x50)
-	.dw  (0x52)
-	.dw  (0x4f)
-	.dw  (0x4a)
-	.dw  (0x45)
-	.dw  (0x4b)
-	.dw  (0x41)
-	.dw  (0x54)
-	.dw  (0x5c)
-	.dw  (0x44)
-	.dw  (0x61)
-	.dw  (0x79)
-	.dw  (0x5f)
-	.dw  (0x31)
-	.dw  (0x5f)
-	.dw  (0x6d)
-	.dw  (0x6f)
-	.dw  (0x64)
-	.dw  (0x65)
-	.dw  (0x6c)
-	.dw  (0x32)
-	.dw  (0x5c)
-	.dw  (0x61)
-	.dw  (0x61)
-	.dw  (0x64)
-	.dw  (0x73)
-	.dw  (0x70)
-	.dw  (0x32)
-	.dw  (0x5f)
-	.dw  (0x70)
-	.dw  (0x72)
-	.dw  (0x6f)
-	.dw  (0x6a)
-	.dw  (0x65)
-	.dw  (0x6b)
-	.dw  (0x61)
-	.dw  (0x74)
-	.dw  (0x5c)
-	.dw  (0x54)
-	.dw  (0x65)
-	.dw  (0x73)
-	.dw  (0x74)
-	.dw  (0x53)
-	.dw  (0x74)
-	.dw  (0x72)
-	.dw  (0x65)
-	.dw  (0x61)
-	.dw  (0x6d)
-	.dw  (0x73)
-	.dw  (0x5c)
-	.dw  (0x32)
-	.dw  (0x63)
-	.dw  (0x68)
-	.dw  (0x5f)
-	.dw  (0x6c)
-	.dw  (0x76)
-	.dw  (0x6c)
-	.dw  (0x5f)
-	.dw  (0x61)
-	.dw  (0x6d)
-	.dw  (0x74)
-	.dw  (0x5f)
-	.dw  (0x34)
-	.dw  (0x38)
-	.dw  (0x6b)
-	.dw  (0x2e)
-	.dw  (0x77)
-	.dw  (0x61)
-	.dw  (0x76)
-	.dw  (0x0)
-	.xdata_ovly
-_string_const_1
-	.dw  (0x6d)
-	.dw  (0x6f)
-	.dw  (0x64)
-	.dw  (0x65)
-	.dw  (0x6c)
-	.dw  (0x33)
-	.dw  (0x5f)
-	.dw  (0x6f)
-	.dw  (0x75)
-	.dw  (0x74)
-	.dw  (0x70)
-	.dw  (0x75)
-	.dw  (0x74)
-	.dw  (0x5f)
-	.dw  (0x73)
-	.dw  (0x70)
-	.dw  (0x65)
-	.dw  (0x65)
-	.dw  (0x63)
-	.dw  (0x68)
-	.dw  (0x5f)
-	.dw  (0x32)
-	.dw  (0x63)
-	.dw  (0x68)
-	.dw  (0x5f)
-	.dw  (0x32)
-	.dw  (0x2e)
-	.dw  (0x77)
-	.dw  (0x61)
-	.dw  (0x76)
-	.dw  (0x0)
 	.xdata_ovly
 _temp_left
 	.bss (0x10)
@@ -326,270 +176,276 @@ dummy		.equ(__intvec)
 		.endif
 	.endif
 
-_main:			/* LN: 162 | CYCLE: 0 | RULES: () */ 
-	xmem[i7] = i7			# LN: 162 | 
-	i7 += 1			# LN: 162 | 
-	i7 = i7 + (0x20d)			# LN: 162 | 
-	i1 = i7 - (0x1)			# LN: 162 | 
-	xmem[i1] = a0h			# LN: 162 | 
-	i1 = i7 - (0x2)			# LN: 162 | 
-	xmem[i1] = i0			# LN: 162 | 
-cline_162_0:			/* LN: 177 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x3)			# LN: 177 | 
-	a0 = 0			# LN: 177 | 
-	xmem[i0] = a0h			# LN: 177 | 
-	do (0x5), label_end_96			# LN: 177 | 
-cline_177_0:			/* LN: 178 | CYCLE: 0 | RULES: () */ 
-label_begin_96:			/* LN: 177 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x3)			# LN: 178 | 
-	a1 = xmem[i0]; a0 = 0			# LN: 178, 178 | 
-	a1 = a1 << 4			# LN: 178 | 
-	i0 = a1			# LN: 178 | 
-	uhalfword(a1) = (0x10)			# LN: 178 | 
-	i0 = i0 + (_sampleBuffer + 0)			# LN: 178 | 
-	call (_memset)			# LN: 178 | 
-cline_178_0:			/* LN: 177 | CYCLE: 0 | RULES: () */ 
-init_latch_label_4:			/* LN: 178 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x3)			# LN: 177 | 
-	a0 = xmem[i0]			# LN: 177 | 
-	uhalfword(a1) = (0x1)			# LN: 177 | 
-	a0 = a0 + a1			# LN: 177 | 
-	i0 = i7 - (0x3)			# LN: 177 | 
-label_end_96:			# LN: 177 | CYCLE: 5 | RULES: ()
-	xmem[i0] = a0h			# LN: 177 | 
-cline_177_1:			/* LN: 182 | CYCLE: 0 | RULES: () */ 
-for_end_4:			/* LN: 177 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (259 - 0)			# LN: 182 | 
-	i1 = (0) + (_string_const_0)			# LN: 182 | 
-	call (_strcpy)			# LN: 182 | 
-cline_182_0:			/* LN: 183 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (259 - 0)			# LN: 183 | 
-	call (_cl_wavread_open)			# LN: 183 | 
-	AnyReg(i0, a0h)			# LN: 183 | 
-	i1 = i7 - (0x104)			# LN: 183 | 
-	xmem[i1] = i0			# LN: 183 | 
-cline_183_0:			/* LN: 184 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x104)			# LN: 184 | 
-	a0 = xmem[i0]			# LN: 184 | 
-	a0 & a0			# LN: 184 | 
-	if (a != 0) jmp (else_2)			# LN: 184 | 
-cline_184_0:			/* LN: 187 | CYCLE: 0 | RULES: () */ 
-	halfword(a0) = (0xffff)			# LN: 187 | 
-	jmp (__epilogue_200)			# LN: 187 | 
-cline_187_0:			/* LN: 193 | CYCLE: 0 | RULES: () */ 
-endif_2:			/* LN: 184 | CYCLE: 0 | RULES: () */ 
-else_2:			/* LN: 184 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x104)			# LN: 193 | 
+_main:			/* LN: 173 | CYCLE: 0 | RULES: () */ 
+	xmem[i7] = i7			# LN: 173 | 
+	i7 += 1			# LN: 173 | 
+	i7 = i7 + (0x20d)			# LN: 173 | 
+	i1 = i7 - (0x1)			# LN: 173 | 
+	xmem[i1] = a0h			# LN: 173 | 
+	i1 = i7 - (0x2)			# LN: 173 | 
+	xmem[i1] = i0			# LN: 173 | 
+cline_173_0:			/* LN: 188 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x3)			# LN: 188 | 
+	a0 = 0			# LN: 188 | 
+	xmem[i0] = a0h			# LN: 188 | 
+	do (0x5), label_end_96			# LN: 188 | 
+cline_188_0:			/* LN: 189 | CYCLE: 0 | RULES: () */ 
+label_begin_96:			/* LN: 188 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x3)			# LN: 189 | 
+	a1 = xmem[i0]; a0 = 0			# LN: 189, 189 | 
+	a1 = a1 << 4			# LN: 189 | 
+	i0 = a1			# LN: 189 | 
+	uhalfword(a1) = (0x10)			# LN: 189 | 
+	i0 = i0 + (_sampleBuffer + 0)			# LN: 189 | 
+	call (_memset)			# LN: 189 | 
+cline_189_0:			/* LN: 188 | CYCLE: 0 | RULES: () */ 
+init_latch_label_4:			/* LN: 189 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x3)			# LN: 188 | 
+	a0 = xmem[i0]			# LN: 188 | 
+	uhalfword(a1) = (0x1)			# LN: 188 | 
+	a0 = a0 + a1			# LN: 188 | 
+	i0 = i7 - (0x3)			# LN: 188 | 
+label_end_96:			# LN: 188 | CYCLE: 5 | RULES: ()
+	xmem[i0] = a0h			# LN: 188 | 
+cline_188_1:			/* LN: 193 | CYCLE: 0 | RULES: () */ 
+for_end_4:			/* LN: 188 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x2)			# LN: 193 | 
 	i0 = xmem[i0]			# LN: 193 | 
-	call (_cl_wavread_getnchannels)			# LN: 193 | 
-	i0 = i7 - (0x105)			# LN: 193 | 
-	xmem[i0] = a0h			# LN: 193 | 
+	i1 = i7 - (259 - 0)			# LN: 193 | 
+	i4 = xmem[i0]			# LN: 193 | 
+	i0 = i1			# LN: 193 | 
+	i1 = i4			# LN: 193 | 
+	call (_strcpy)			# LN: 193 | 
 cline_193_0:			/* LN: 194 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x104)			# LN: 194 | 
-	i0 = xmem[i0]			# LN: 194 | 
-	call (_cl_wavread_bits_per_sample)			# LN: 194 | 
-	i0 = i7 - (0x106)			# LN: 194 | 
-	xmem[i0] = a0h			# LN: 194 | 
+	i0 = i7 - (259 - 0)			# LN: 194 | 
+	call (_cl_wavread_open)			# LN: 194 | 
+	AnyReg(i0, a0h)			# LN: 194 | 
+	i1 = i7 - (0x104)			# LN: 194 | 
+	xmem[i1] = i0			# LN: 194 | 
 cline_194_0:			/* LN: 195 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x104)			# LN: 195 | 
-	i0 = xmem[i0]			# LN: 195 | 
-	call (_cl_wavread_frame_rate)			# LN: 195 | 
-	i0 = i7 - (0x107)			# LN: 195 | 
-	xmem[i0] = a0h			# LN: 195 | 
-cline_195_0:			/* LN: 196 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x104)			# LN: 196 | 
-	i0 = xmem[i0]			# LN: 196 | 
-	call (_cl_wavread_number_of_frames)			# LN: 196 | 
-	i0 = i7 - (0x108)			# LN: 196 | 
-	xmem[i0] = a0h			# LN: 196 | 
-cline_196_0:			/* LN: 201 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (520 - 0)			# LN: 201 | 
-	i1 = (0) + (_string_const_1)			# LN: 201 | 
-	call (_strcpy)			# LN: 201 | 
-cline_201_0:			/* LN: 202 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (520 - 0)			# LN: 202 | 
-	i1 = i7 - (0x106)			# LN: 202 | 
-	a0 = xmem[i1]			# LN: 202 | 
-	i1 = i7 - (0x105)			# LN: 202 | 
-	a1 = xmem[i1]			# LN: 202 | 
-	i1 = i7 - (0x107)			# LN: 202 | 
-	b0 = xmem[i1]			# LN: 202 | 
-	call (_cl_wavwrite_open)			# LN: 202 | 
-	AnyReg(i0, a0h)			# LN: 202 | 
-	i1 = i7 - (0x209)			# LN: 202 | 
-	xmem[i1] = i0			# LN: 202 | 
-cline_202_0:			/* LN: 203 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x209)			# LN: 203 | 
-	a0 = xmem[i0]			# LN: 203 | 
-	a0 & a0			# LN: 203 | 
-	if (a != 0) jmp (else_3)			# LN: 203 | 
-cline_203_0:			/* LN: 206 | CYCLE: 0 | RULES: () */ 
-	halfword(a0) = (0xffff)			# LN: 206 | 
-	jmp (__epilogue_200)			# LN: 206 | 
-cline_206_0:			/* LN: 219 | CYCLE: 0 | RULES: () */ 
-endif_3:			/* LN: 203 | CYCLE: 0 | RULES: () */ 
-else_3:			/* LN: 203 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20a)			# LN: 219 | 
-	a0 = 0			# LN: 219 | 
-	xmem[i0] = a0h			# LN: 219 | 
-for_5:			/* LN: 219 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x108)			# LN: 219 | 
-	a0 = xmem[i0]			# LN: 219 | 
-	uhalfword(a1) = (0x10)			# LN: 219 | 
-	call (__div)			# LN: 219 | 
-	i0 = i7 - (0x20a)			# LN: 219 | 
-	a1 = xmem[i0]			# LN: 219 | 
-	a1 - a0			# LN: 219 | 
-	if (a >= 0) jmp (for_end_5)			# LN: 219 | 
-cline_219_0:			/* LN: 221 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20b)			# LN: 221 | 
-	a0 = 0			# LN: 221 | 
-	xmem[i0] = a0h			# LN: 221 | 
-	do (0x10), label_end_97			# LN: 221 | 
-cline_221_0:			/* LN: 223 | CYCLE: 0 | RULES: () */ 
-label_begin_97:			/* LN: 221 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20c)			# LN: 223 | 
-	a0 = 0			# LN: 223 | 
-	xmem[i0] = a0h			# LN: 223 | 
-for_7:			/* LN: 223 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20c)			# LN: 223 | 
-	a0 = xmem[i0]			# LN: 223 | 
-	i0 = i7 - (0x105)			# LN: 223 | 
-	a1 = xmem[i0]			# LN: 223 | 
-	a0 - a1			# LN: 223 | 
-	if (a >= 0) jmp (for_end_7)			# LN: 223 | 
-cline_223_0:			/* LN: 225 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x104)			# LN: 225 | 
-	i0 = xmem[i0]			# LN: 225 | 
-	call (_cl_wavread_recvsample)			# LN: 225 | 
-	i0 = i7 - (0x20d)			# LN: 225 | 
-	xmem[i0] = a0h			# LN: 225 | 
-cline_225_0:			/* LN: 226 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20c)			# LN: 226 | 
-	a0 = xmem[i0]			# LN: 226 | 
-	a0 = a0 << 4			# LN: 226 | 
-	i0 = a0			# LN: 226 | 
-	i1 = i7 - (0x20b)			# LN: 226 | 
-	i0 = i0 + (_sampleBuffer + 0)			# LN: 226 | 
-	a0 = xmem[i1]			# LN: 226 | 
-	a1 = i0			# LN: 226 | 
-	a0 = a1 + a0			# LN: 226 | 
-	AnyReg(i0, a0h)			# LN: 226 | 
-	i1 = i7 - (0x20d)			# LN: 226 | 
-	a0 = xmem[i1]			# LN: 226 | 
-	xmem[i0] = a0h			# LN: 226 | 
-cline_226_0:			/* LN: 223 | CYCLE: 0 | RULES: () */ 
-init_latch_label_5:			/* LN: 227 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20c)			# LN: 223 | 
-	a0 = xmem[i0]			# LN: 223 | 
-	uhalfword(a1) = (0x1)			# LN: 223 | 
-	a0 = a0 + a1			# LN: 223 | 
-	i0 = i7 - (0x20c)			# LN: 223 | 
-	xmem[i0] = a0h			# LN: 223 | 
-	jmp (for_7)			# LN: 223 | 
-cline_223_1:			/* LN: 221 | CYCLE: 0 | RULES: () */ 
-init_latch_label_6:			/* LN: 228 | CYCLE: 0 | RULES: () */ 
-for_end_7:			/* LN: 223 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20b)			# LN: 221 | 
-	a0 = xmem[i0]			# LN: 221 | 
-	uhalfword(a1) = (0x1)			# LN: 221 | 
-	a0 = a0 + a1			# LN: 221 | 
-	i0 = i7 - (0x20b)			# LN: 221 | 
-label_end_97:			# LN: 221 | CYCLE: 5 | RULES: ()
-	xmem[i0] = a0h			# LN: 221 | 
-cline_221_1:			/* LN: 230 | CYCLE: 0 | RULES: () */ 
-for_end_6:			/* LN: 221 | CYCLE: 0 | RULES: () */ 
-	call (_processing)			# LN: 230 | 
+	a0 = xmem[i0]			# LN: 195 | 
+	a0 & a0			# LN: 195 | 
+	if (a != 0) jmp (else_2)			# LN: 195 | 
+cline_195_0:			/* LN: 198 | CYCLE: 0 | RULES: () */ 
+	halfword(a0) = (0xffff)			# LN: 198 | 
+	jmp (__epilogue_200)			# LN: 198 | 
+cline_198_0:			/* LN: 204 | CYCLE: 0 | RULES: () */ 
+endif_2:			/* LN: 195 | CYCLE: 0 | RULES: () */ 
+else_2:			/* LN: 195 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x105)			# LN: 204 | 
+	uhalfword(a0) = (0x5)			# LN: 204 | 
+	xmem[i0] = a0h			# LN: 204 | 
+cline_204_0:			/* LN: 205 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x104)			# LN: 205 | 
+	i0 = xmem[i0]			# LN: 205 | 
+	call (_cl_wavread_bits_per_sample)			# LN: 205 | 
+	i0 = i7 - (0x106)			# LN: 205 | 
+	xmem[i0] = a0h			# LN: 205 | 
+cline_205_0:			/* LN: 206 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x104)			# LN: 206 | 
+	i0 = xmem[i0]			# LN: 206 | 
+	call (_cl_wavread_frame_rate)			# LN: 206 | 
+	i0 = i7 - (0x107)			# LN: 206 | 
+	xmem[i0] = a0h			# LN: 206 | 
+cline_206_0:			/* LN: 207 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x104)			# LN: 207 | 
+	i0 = xmem[i0]			# LN: 207 | 
+	call (_cl_wavread_number_of_frames)			# LN: 207 | 
+	i0 = i7 - (0x108)			# LN: 207 | 
+	xmem[i0] = a0h			# LN: 207 | 
+cline_207_0:			/* LN: 212 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x2)			# LN: 212 | 
+	i0 = xmem[i0]			# LN: 212 | 
+	i1 = i7 - (520 - 0)			# LN: 212 | 
+	i0 += 1			# LN: 212 | 
+	i4 = xmem[i0]			# LN: 212 | 
+	i0 = i1			# LN: 212 | 
+	i1 = i4			# LN: 212 | 
+	call (_strcpy)			# LN: 212 | 
+cline_212_0:			/* LN: 213 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (520 - 0)			# LN: 213 | 
+	i1 = i7 - (0x106)			# LN: 213 | 
+	a0 = xmem[i1]			# LN: 213 | 
+	i1 = i7 - (0x105)			# LN: 213 | 
+	a1 = xmem[i1]			# LN: 213 | 
+	i1 = i7 - (0x107)			# LN: 213 | 
+	b0 = xmem[i1]			# LN: 213 | 
+	call (_cl_wavwrite_open)			# LN: 213 | 
+	AnyReg(i0, a0h)			# LN: 213 | 
+	i1 = i7 - (0x209)			# LN: 213 | 
+	xmem[i1] = i0			# LN: 213 | 
+cline_213_0:			/* LN: 214 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x209)			# LN: 214 | 
+	a0 = xmem[i0]			# LN: 214 | 
+	a0 & a0			# LN: 214 | 
+	if (a != 0) jmp (else_3)			# LN: 214 | 
+cline_214_0:			/* LN: 217 | CYCLE: 0 | RULES: () */ 
+	halfword(a0) = (0xffff)			# LN: 217 | 
+	jmp (__epilogue_200)			# LN: 217 | 
+cline_217_0:			/* LN: 230 | CYCLE: 0 | RULES: () */ 
+endif_3:			/* LN: 214 | CYCLE: 0 | RULES: () */ 
+else_3:			/* LN: 214 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20a)			# LN: 230 | 
+	a0 = 0			# LN: 230 | 
+	xmem[i0] = a0h			# LN: 230 | 
+for_5:			/* LN: 230 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x108)			# LN: 230 | 
+	a0 = xmem[i0]			# LN: 230 | 
+	uhalfword(a1) = (0x10)			# LN: 230 | 
+	call (__div)			# LN: 230 | 
+	i0 = i7 - (0x20a)			# LN: 230 | 
+	a1 = xmem[i0]			# LN: 230 | 
+	a1 - a0			# LN: 230 | 
+	if (a >= 0) jmp (for_end_5)			# LN: 230 | 
 cline_230_0:			/* LN: 232 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x20b)			# LN: 232 | 
 	a0 = 0			# LN: 232 | 
 	xmem[i0] = a0h			# LN: 232 | 
-	do (0x10), label_end_98			# LN: 232 | 
+	do (0x10), label_end_97			# LN: 232 | 
 cline_232_0:			/* LN: 234 | CYCLE: 0 | RULES: () */ 
-label_begin_98:			/* LN: 232 | CYCLE: 0 | RULES: () */ 
+label_begin_97:			/* LN: 232 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x20c)			# LN: 234 | 
 	a0 = 0			# LN: 234 | 
 	xmem[i0] = a0h			# LN: 234 | 
-for_9:			/* LN: 234 | CYCLE: 0 | RULES: () */ 
+for_7:			/* LN: 234 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x20c)			# LN: 234 | 
 	a0 = xmem[i0]			# LN: 234 | 
 	i0 = i7 - (0x105)			# LN: 234 | 
 	a1 = xmem[i0]			# LN: 234 | 
 	a0 - a1			# LN: 234 | 
-	if (a >= 0) jmp (for_end_9)			# LN: 234 | 
+	if (a >= 0) jmp (for_end_7)			# LN: 234 | 
 cline_234_0:			/* LN: 236 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20c)			# LN: 236 | 
-	a0 = xmem[i0]			# LN: 236 | 
-	a0 = a0 << 4			# LN: 236 | 
-	i0 = a0			# LN: 236 | 
-	i1 = i7 - (0x20b)			# LN: 236 | 
-	i0 = i0 + (_sampleBuffer + 0)			# LN: 236 | 
-	a0 = xmem[i1]			# LN: 236 | 
-	a1 = i0			# LN: 236 | 
-	a0 = a1 + a0			# LN: 236 | 
-	AnyReg(i0, a0h)			# LN: 236 | 
-	i1 = i7 - (0x20d)			# LN: 236 | 
-	a0 = xmem[i0]			# LN: 236 | 
-	xmem[i1] = a0h			# LN: 236 | 
+	i0 = i7 - (0x104)			# LN: 236 | 
+	i0 = xmem[i0]			# LN: 236 | 
+	call (_cl_wavread_recvsample)			# LN: 236 | 
+	i0 = i7 - (0x20d)			# LN: 236 | 
+	xmem[i0] = a0h			# LN: 236 | 
 cline_236_0:			/* LN: 237 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x209)			# LN: 237 | 
+	i0 = i7 - (0x20c)			# LN: 237 | 
+	a0 = xmem[i0]			# LN: 237 | 
+	a0 = a0 << 4			# LN: 237 | 
+	i0 = a0			# LN: 237 | 
+	i1 = i7 - (0x20b)			# LN: 237 | 
+	i0 = i0 + (_sampleBuffer + 0)			# LN: 237 | 
+	a0 = xmem[i1]			# LN: 237 | 
+	a1 = i0			# LN: 237 | 
+	a0 = a1 + a0			# LN: 237 | 
+	AnyReg(i0, a0h)			# LN: 237 | 
 	i1 = i7 - (0x20d)			# LN: 237 | 
 	a0 = xmem[i1]			# LN: 237 | 
-	i0 = xmem[i0]			# LN: 237 | 
-	call (_cl_wavwrite_sendsample)			# LN: 237 | 
+	xmem[i0] = a0h			# LN: 237 | 
 cline_237_0:			/* LN: 234 | CYCLE: 0 | RULES: () */ 
-init_latch_label_7:			/* LN: 238 | CYCLE: 0 | RULES: () */ 
+init_latch_label_5:			/* LN: 238 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x20c)			# LN: 234 | 
 	a0 = xmem[i0]			# LN: 234 | 
 	uhalfword(a1) = (0x1)			# LN: 234 | 
 	a0 = a0 + a1			# LN: 234 | 
 	i0 = i7 - (0x20c)			# LN: 234 | 
 	xmem[i0] = a0h			# LN: 234 | 
-	jmp (for_9)			# LN: 234 | 
+	jmp (for_7)			# LN: 234 | 
 cline_234_1:			/* LN: 232 | CYCLE: 0 | RULES: () */ 
-init_latch_label_8:			/* LN: 239 | CYCLE: 0 | RULES: () */ 
-for_end_9:			/* LN: 234 | CYCLE: 0 | RULES: () */ 
+init_latch_label_6:			/* LN: 239 | CYCLE: 0 | RULES: () */ 
+for_end_7:			/* LN: 234 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x20b)			# LN: 232 | 
 	a0 = xmem[i0]			# LN: 232 | 
 	uhalfword(a1) = (0x1)			# LN: 232 | 
 	a0 = a0 + a1			# LN: 232 | 
 	i0 = i7 - (0x20b)			# LN: 232 | 
-label_end_98:			# LN: 232 | CYCLE: 5 | RULES: ()
+label_end_97:			# LN: 232 | CYCLE: 5 | RULES: ()
 	xmem[i0] = a0h			# LN: 232 | 
-cline_232_1:			/* LN: 219 | CYCLE: 0 | RULES: () */ 
-init_latch_label_9:			/* LN: 240 | CYCLE: 0 | RULES: () */ 
-for_end_8:			/* LN: 232 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x20a)			# LN: 219 | 
-	a0 = xmem[i0]			# LN: 219 | 
-	uhalfword(a1) = (0x1)			# LN: 219 | 
-	a0 = a0 + a1			# LN: 219 | 
-	i0 = i7 - (0x20a)			# LN: 219 | 
-	xmem[i0] = a0h			# LN: 219 | 
-	jmp (for_5)			# LN: 219 | 
-cline_219_1:			/* LN: 245 | CYCLE: 0 | RULES: () */ 
-for_end_5:			/* LN: 219 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x104)			# LN: 245 | 
-	i0 = xmem[i0]			# LN: 245 | 
-	call (_cl_wavread_close)			# LN: 245 | 
-cline_245_0:			/* LN: 246 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x209)			# LN: 246 | 
-	i0 = xmem[i0]			# LN: 246 | 
-	call (_cl_wavwrite_close)			# LN: 246 | 
-cline_246_0:			/* LN: 249 | CYCLE: 0 | RULES: () */ 
-	a0 = 0			# LN: 249 | 
-	jmp (__epilogue_200)			# LN: 249 | 
-cline_249_0:			/* LN: 250 | CYCLE: 0 | RULES: () */ 
-__epilogue_200:			/* LN: 250 | CYCLE: 0 | RULES: () */ 
-	i7 = i7 - (0x20d)			# LN: 250 | 
-	i7 -= 1			# LN: 250 | 
-	ret			# LN: 250 | 
+cline_232_1:			/* LN: 241 | CYCLE: 0 | RULES: () */ 
+for_end_6:			/* LN: 232 | CYCLE: 0 | RULES: () */ 
+	call (_processing)			# LN: 241 | 
+cline_241_0:			/* LN: 243 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20b)			# LN: 243 | 
+	a0 = 0			# LN: 243 | 
+	xmem[i0] = a0h			# LN: 243 | 
+	do (0x10), label_end_98			# LN: 243 | 
+cline_243_0:			/* LN: 245 | CYCLE: 0 | RULES: () */ 
+label_begin_98:			/* LN: 243 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20c)			# LN: 245 | 
+	a0 = 0			# LN: 245 | 
+	xmem[i0] = a0h			# LN: 245 | 
+for_9:			/* LN: 245 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20c)			# LN: 245 | 
+	a0 = xmem[i0]			# LN: 245 | 
+	i0 = i7 - (0x105)			# LN: 245 | 
+	a1 = xmem[i0]			# LN: 245 | 
+	a0 - a1			# LN: 245 | 
+	if (a >= 0) jmp (for_end_9)			# LN: 245 | 
+cline_245_0:			/* LN: 247 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20c)			# LN: 247 | 
+	a0 = xmem[i0]			# LN: 247 | 
+	a0 = a0 << 4			# LN: 247 | 
+	i0 = a0			# LN: 247 | 
+	i1 = i7 - (0x20b)			# LN: 247 | 
+	i0 = i0 + (_sampleBuffer + 0)			# LN: 247 | 
+	a0 = xmem[i1]			# LN: 247 | 
+	a1 = i0			# LN: 247 | 
+	a0 = a1 + a0			# LN: 247 | 
+	AnyReg(i0, a0h)			# LN: 247 | 
+	i1 = i7 - (0x20d)			# LN: 247 | 
+	a0 = xmem[i0]			# LN: 247 | 
+	xmem[i1] = a0h			# LN: 247 | 
+cline_247_0:			/* LN: 248 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x209)			# LN: 248 | 
+	i1 = i7 - (0x20d)			# LN: 248 | 
+	a0 = xmem[i1]			# LN: 248 | 
+	i0 = xmem[i0]			# LN: 248 | 
+	call (_cl_wavwrite_sendsample)			# LN: 248 | 
+cline_248_0:			/* LN: 245 | CYCLE: 0 | RULES: () */ 
+init_latch_label_7:			/* LN: 249 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20c)			# LN: 245 | 
+	a0 = xmem[i0]			# LN: 245 | 
+	uhalfword(a1) = (0x1)			# LN: 245 | 
+	a0 = a0 + a1			# LN: 245 | 
+	i0 = i7 - (0x20c)			# LN: 245 | 
+	xmem[i0] = a0h			# LN: 245 | 
+	jmp (for_9)			# LN: 245 | 
+cline_245_1:			/* LN: 243 | CYCLE: 0 | RULES: () */ 
+init_latch_label_8:			/* LN: 250 | CYCLE: 0 | RULES: () */ 
+for_end_9:			/* LN: 245 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20b)			# LN: 243 | 
+	a0 = xmem[i0]			# LN: 243 | 
+	uhalfword(a1) = (0x1)			# LN: 243 | 
+	a0 = a0 + a1			# LN: 243 | 
+	i0 = i7 - (0x20b)			# LN: 243 | 
+label_end_98:			# LN: 243 | CYCLE: 5 | RULES: ()
+	xmem[i0] = a0h			# LN: 243 | 
+cline_243_1:			/* LN: 230 | CYCLE: 0 | RULES: () */ 
+init_latch_label_9:			/* LN: 251 | CYCLE: 0 | RULES: () */ 
+for_end_8:			/* LN: 243 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x20a)			# LN: 230 | 
+	a0 = xmem[i0]			# LN: 230 | 
+	uhalfword(a1) = (0x1)			# LN: 230 | 
+	a0 = a0 + a1			# LN: 230 | 
+	i0 = i7 - (0x20a)			# LN: 230 | 
+	xmem[i0] = a0h			# LN: 230 | 
+	jmp (for_5)			# LN: 230 | 
+cline_230_1:			/* LN: 256 | CYCLE: 0 | RULES: () */ 
+for_end_5:			/* LN: 230 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x104)			# LN: 256 | 
+	i0 = xmem[i0]			# LN: 256 | 
+	call (_cl_wavread_close)			# LN: 256 | 
+cline_256_0:			/* LN: 257 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x209)			# LN: 257 | 
+	i0 = xmem[i0]			# LN: 257 | 
+	call (_cl_wavwrite_close)			# LN: 257 | 
+cline_257_0:			/* LN: 260 | CYCLE: 0 | RULES: () */ 
+	a0 = 0			# LN: 260 | 
+	jmp (__epilogue_200)			# LN: 260 | 
+cline_260_0:			/* LN: 261 | CYCLE: 0 | RULES: () */ 
+__epilogue_200:			/* LN: 261 | CYCLE: 0 | RULES: () */ 
+	i7 = i7 - (0x20d)			# LN: 261 | 
+	i7 -= 1			# LN: 261 | 
+	ret			# LN: 261 | 
 
 
 
 _processing:			/* LN: 59 | CYCLE: 0 | RULES: () */ 
 	xmem[i7] = i7			# LN: 59 | 
 	i7 += 1			# LN: 59 | 
-	xmem[i7] = i2; i7 += 1			# LN: 59, 59 | 
 	i7 = i7 + (0x11)			# LN: 59 | 
 cline_59_0:			/* LN: 61 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x1)			# LN: 61 | 
@@ -697,12 +553,7 @@ cline_85_0:			/* LN: 86 | CYCLE: 0 | RULES: () */
 	i1 = (0) + (_coefficients_11k_lpf)			# LN: 86 | 
 	a0 = xmem[i0]			# LN: 86 | 
 	i4 = (0) + (_x_history0)			# LN: 86 | 
-	i0 = i7 - (0x6)			# LN: 86 | 
-	i0 = xmem[i0]			# LN: 86 | 
 	i5 = (0) + (_y_history0)			# LN: 86 | 
-	i0 += 1			# LN: 86 | 
-	i2 = i7 - (0x6)			# LN: 86 | 
-	xmem[i2] = i0			# LN: 86 | 
 	i0 = i1			# LN: 86 | 
 	i1 = i4			# LN: 86 | 
 	i4 = i5			# LN: 86 | 
@@ -1064,75 +915,83 @@ cline_139_0:			/* LN: 142 | CYCLE: 0 | RULES: () */
 	do (0x10), label_end_94			# LN: 142 | 
 cline_142_0:			/* LN: 144 | CYCLE: 0 | RULES: () */ 
 label_begin_94:			/* LN: 142 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x1)			# LN: 144 | 
-	i1 = i7 - (0xc)			# LN: 144 | 
-	i1 = xmem[i1]			# LN: 144 | 
-	i0 = xmem[i0]			# LN: 144 | 
-	a0 = xmem[i1]			# LN: 144 | 
-	xmem[i0] = a0h			# LN: 144 | 
-	i0 = i7 - (0x1)			# LN: 144 | 
-	i0 = xmem[i0]			# LN: 144 | 
-	i1 = i7 - (0x1)			# LN: 144 | 
-	i0 += 1			# LN: 144 | 
-	xmem[i1] = i0			# LN: 144 | 
 	i0 = i7 - (0xc)			# LN: 144 | 
 	i0 = xmem[i0]			# LN: 144 | 
-	i1 = i7 - (0xc)			# LN: 144 | 
-	i0 += 1			# LN: 144 | 
-	xmem[i1] = i0			# LN: 144 | 
+	i1 = i7 - (0x1)			# LN: 144 | 
+	i1 = xmem[i1]			# LN: 144 | 
+	a0 = xmem[i0]			# LN: 144 | 
+	xmem[i1] = a0h			# LN: 144 | 
 cline_144_0:			/* LN: 145 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x2)			# LN: 145 | 
-	i1 = i7 - (0xd)			# LN: 145 | 
-	i1 = xmem[i1]			# LN: 145 | 
-	i0 = xmem[i0]			# LN: 145 | 
-	a0 = xmem[i1]			# LN: 145 | 
-	xmem[i0] = a0h			# LN: 145 | 
-	i0 = i7 - (0x2)			# LN: 145 | 
-	i0 = xmem[i0]			# LN: 145 | 
-	i1 = i7 - (0x2)			# LN: 145 | 
-	i0 += 1			# LN: 145 | 
-	xmem[i1] = i0			# LN: 145 | 
 	i0 = i7 - (0xd)			# LN: 145 | 
 	i0 = xmem[i0]			# LN: 145 | 
-	i1 = i7 - (0xd)			# LN: 145 | 
-	i0 += 1			# LN: 145 | 
-	xmem[i1] = i0			# LN: 145 | 
+	i1 = i7 - (0x2)			# LN: 145 | 
+	i1 = xmem[i1]			# LN: 145 | 
+	a0 = xmem[i0]			# LN: 145 | 
+	xmem[i1] = a0h			# LN: 145 | 
 cline_145_0:			/* LN: 146 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x3)			# LN: 146 | 
-	i1 = i7 - (0x8)			# LN: 146 | 
-	i1 = xmem[i1]			# LN: 146 | 
-	i0 = xmem[i0]			# LN: 146 | 
-	a0 = xmem[i1]			# LN: 146 | 
-	xmem[i0] = a0h			# LN: 146 | 
-	i0 = i7 - (0x3)			# LN: 146 | 
-	i0 = xmem[i0]			# LN: 146 | 
-	i1 = i7 - (0x3)			# LN: 146 | 
-	i0 += 1			# LN: 146 | 
-	xmem[i1] = i0			# LN: 146 | 
 	i0 = i7 - (0x8)			# LN: 146 | 
 	i0 = xmem[i0]			# LN: 146 | 
-	i1 = i7 - (0x8)			# LN: 146 | 
-	i0 += 1			# LN: 146 | 
-	xmem[i1] = i0			# LN: 146 | 
+	i1 = i7 - (0x3)			# LN: 146 | 
+	i1 = xmem[i1]			# LN: 146 | 
+	a0 = xmem[i0]			# LN: 146 | 
+	xmem[i1] = a0h			# LN: 146 | 
 cline_146_0:			/* LN: 147 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x4)			# LN: 147 | 
-	i1 = i7 - (0x9)			# LN: 147 | 
-	i1 = xmem[i1]			# LN: 147 | 
-	i0 = xmem[i0]			# LN: 147 | 
-	a0 = xmem[i1]			# LN: 147 | 
-	xmem[i0] = a0h			# LN: 147 | 
-	i0 = i7 - (0x4)			# LN: 147 | 
-	i0 = xmem[i0]			# LN: 147 | 
-	i1 = i7 - (0x4)			# LN: 147 | 
-	i0 += 1			# LN: 147 | 
-	xmem[i1] = i0			# LN: 147 | 
 	i0 = i7 - (0x9)			# LN: 147 | 
 	i0 = xmem[i0]			# LN: 147 | 
-	i1 = i7 - (0x9)			# LN: 147 | 
-	i0 += 1			# LN: 147 | 
-	xmem[i1] = i0			# LN: 147 | 
-cline_147_0:			/* LN: 142 | CYCLE: 0 | RULES: () */ 
-init_latch_label_2:			/* LN: 148 | CYCLE: 0 | RULES: () */ 
+	i1 = i7 - (0x4)			# LN: 147 | 
+	i1 = xmem[i1]			# LN: 147 | 
+	a0 = xmem[i0]			# LN: 147 | 
+	xmem[i1] = a0h			# LN: 147 | 
+cline_147_0:			/* LN: 148 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x1)			# LN: 148 | 
+	i0 = xmem[i0]			# LN: 148 | 
+	i1 = i7 - (0x1)			# LN: 148 | 
+	i0 += 1			# LN: 148 | 
+	xmem[i1] = i0			# LN: 148 | 
+cline_148_0:			/* LN: 149 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x2)			# LN: 149 | 
+	i0 = xmem[i0]			# LN: 149 | 
+	i1 = i7 - (0x2)			# LN: 149 | 
+	i0 += 1			# LN: 149 | 
+	xmem[i1] = i0			# LN: 149 | 
+cline_149_0:			/* LN: 150 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x3)			# LN: 150 | 
+	i0 = xmem[i0]			# LN: 150 | 
+	i1 = i7 - (0x3)			# LN: 150 | 
+	i0 += 1			# LN: 150 | 
+	xmem[i1] = i0			# LN: 150 | 
+cline_150_0:			/* LN: 151 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x4)			# LN: 151 | 
+	i0 = xmem[i0]			# LN: 151 | 
+	i1 = i7 - (0x4)			# LN: 151 | 
+	i0 += 1			# LN: 151 | 
+	xmem[i1] = i0			# LN: 151 | 
+cline_151_0:			/* LN: 152 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0xc)			# LN: 152 | 
+	i0 = xmem[i0]			# LN: 152 | 
+	i1 = i7 - (0xc)			# LN: 152 | 
+	i0 += 1			# LN: 152 | 
+	xmem[i1] = i0			# LN: 152 | 
+cline_152_0:			/* LN: 153 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0xd)			# LN: 153 | 
+	i0 = xmem[i0]			# LN: 153 | 
+	i1 = i7 - (0xd)			# LN: 153 | 
+	i0 += 1			# LN: 153 | 
+	xmem[i1] = i0			# LN: 153 | 
+cline_153_0:			/* LN: 154 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x8)			# LN: 154 | 
+	i0 = xmem[i0]			# LN: 154 | 
+	i1 = i7 - (0x8)			# LN: 154 | 
+	i0 += 1			# LN: 154 | 
+	xmem[i1] = i0			# LN: 154 | 
+cline_154_0:			/* LN: 155 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x9)			# LN: 155 | 
+	i0 = xmem[i0]			# LN: 155 | 
+	i1 = i7 - (0x9)			# LN: 155 | 
+	i0 += 1			# LN: 155 | 
+	xmem[i1] = i0			# LN: 155 | 
+cline_155_0:			/* LN: 142 | CYCLE: 0 | RULES: () */ 
+init_latch_label_2:			/* LN: 156 | CYCLE: 0 | RULES: () */ 
 	i0 = i7 - (0x10)			# LN: 142 | 
 	a0 = xmem[i0]			# LN: 142 | 
 	uhalfword(a1) = (0x1)			# LN: 142 | 
@@ -1142,67 +1001,80 @@ label_end_94:			# LN: 142 | CYCLE: 5 | RULES: ()
 	xmem[i0] = a0h			# LN: 142 | 
 for_end_2:			/* LN: 142 | CYCLE: 0 | RULES: () */ 
 	jmp (endif_1)			# LN: 142 | 
-cline_142_1:			/* LN: 151 | CYCLE: 0 | RULES: () */ 
+cline_142_1:			/* LN: 159 | CYCLE: 0 | RULES: () */ 
 else_1:			/* LN: 139 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x11)			# LN: 151 | 
-	a0 = 0			# LN: 151 | 
-	xmem[i0] = a0h			# LN: 151 | 
-	do (0x10), label_end_95			# LN: 151 | 
-cline_151_0:			/* LN: 153 | CYCLE: 0 | RULES: () */ 
-label_begin_95:			/* LN: 151 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x1)			# LN: 153 | 
-	i1 = i7 - (0x6)			# LN: 153 | 
-	i1 = xmem[i1]			# LN: 153 | 
-	i0 = xmem[i0]			# LN: 153 | 
-	a0 = xmem[i1]			# LN: 153 | 
-	xmem[i0] = a0h			# LN: 153 | 
-	i0 = i7 - (0x1)			# LN: 153 | 
-	i0 = xmem[i0]			# LN: 153 | 
-	i1 = i7 - (0x1)			# LN: 153 | 
-	i0 += 1			# LN: 153 | 
-	xmem[i1] = i0			# LN: 153 | 
-	i0 = i7 - (0x6)			# LN: 153 | 
-	i0 = xmem[i0]			# LN: 153 | 
-	i1 = i7 - (0x6)			# LN: 153 | 
-	i0 += 1			# LN: 153 | 
-	xmem[i1] = i0			# LN: 153 | 
-cline_153_0:			/* LN: 154 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x2)			# LN: 154 | 
-	i1 = i7 - (0x7)			# LN: 154 | 
-	i1 = xmem[i1]			# LN: 154 | 
-	i0 = xmem[i0]			# LN: 154 | 
-	a0 = xmem[i1]			# LN: 154 | 
-	xmem[i0] = a0h			# LN: 154 | 
-	i0 = i7 - (0x2)			# LN: 154 | 
-	i0 = xmem[i0]			# LN: 154 | 
-	i1 = i7 - (0x2)			# LN: 154 | 
-	i0 += 1			# LN: 154 | 
-	xmem[i1] = i0			# LN: 154 | 
-	i0 = i7 - (0x7)			# LN: 154 | 
-	i0 = xmem[i0]			# LN: 154 | 
-	i1 = i7 - (0x7)			# LN: 154 | 
-	i0 += 1			# LN: 154 | 
-	xmem[i1] = i0			# LN: 154 | 
-cline_154_0:			/* LN: 151 | CYCLE: 0 | RULES: () */ 
-init_latch_label_3:			/* LN: 155 | CYCLE: 0 | RULES: () */ 
-	i0 = i7 - (0x11)			# LN: 151 | 
-	a0 = xmem[i0]			# LN: 151 | 
-	uhalfword(a1) = (0x1)			# LN: 151 | 
-	a0 = a0 + a1			# LN: 151 | 
-	i0 = i7 - (0x11)			# LN: 151 | 
-label_end_95:			# LN: 151 | CYCLE: 5 | RULES: ()
-	xmem[i0] = a0h			# LN: 151 | 
-cline_151_1:			/* LN: 158 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x11)			# LN: 159 | 
+	a0 = 0			# LN: 159 | 
+	xmem[i0] = a0h			# LN: 159 | 
+	do (0x10), label_end_95			# LN: 159 | 
+cline_159_0:			/* LN: 161 | CYCLE: 0 | RULES: () */ 
+label_begin_95:			/* LN: 159 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x1)			# LN: 161 | 
+	i1 = i7 - (0x6)			# LN: 161 | 
+	i1 = xmem[i1]			# LN: 161 | 
+	i0 = xmem[i0]			# LN: 161 | 
+	a0 = xmem[i1]			# LN: 161 | 
+	xmem[i0] = a0h			# LN: 161 | 
+	i0 = i7 - (0x1)			# LN: 161 | 
+	i0 = xmem[i0]			# LN: 161 | 
+	i1 = i7 - (0x1)			# LN: 161 | 
+	i0 += 1			# LN: 161 | 
+	xmem[i1] = i0			# LN: 161 | 
+cline_161_0:			/* LN: 162 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x2)			# LN: 162 | 
+	i1 = i7 - (0x7)			# LN: 162 | 
+	i1 = xmem[i1]			# LN: 162 | 
+	i0 = xmem[i0]			# LN: 162 | 
+	a0 = xmem[i1]			# LN: 162 | 
+	xmem[i0] = a0h			# LN: 162 | 
+	i0 = i7 - (0x2)			# LN: 162 | 
+	i0 = xmem[i0]			# LN: 162 | 
+	i1 = i7 - (0x2)			# LN: 162 | 
+	i0 += 1			# LN: 162 | 
+	xmem[i1] = i0			# LN: 162 | 
+cline_162_0:			/* LN: 163 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x1)			# LN: 163 | 
+	i0 = xmem[i0]			# LN: 163 | 
+	i1 = i7 - (0x1)			# LN: 163 | 
+	i0 += 1			# LN: 163 | 
+	xmem[i1] = i0			# LN: 163 | 
+cline_163_0:			/* LN: 164 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x2)			# LN: 164 | 
+	i0 = xmem[i0]			# LN: 164 | 
+	i1 = i7 - (0x2)			# LN: 164 | 
+	i0 += 1			# LN: 164 | 
+	xmem[i1] = i0			# LN: 164 | 
+cline_164_0:			/* LN: 165 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x6)			# LN: 165 | 
+	i0 = xmem[i0]			# LN: 165 | 
+	i1 = i7 - (0x6)			# LN: 165 | 
+	i0 += 1			# LN: 165 | 
+	xmem[i1] = i0			# LN: 165 | 
+cline_165_0:			/* LN: 166 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x7)			# LN: 166 | 
+	i0 = xmem[i0]			# LN: 166 | 
+	i1 = i7 - (0x7)			# LN: 166 | 
+	i0 += 1			# LN: 166 | 
+	xmem[i1] = i0			# LN: 166 | 
+cline_166_0:			/* LN: 159 | CYCLE: 0 | RULES: () */ 
+init_latch_label_3:			/* LN: 167 | CYCLE: 0 | RULES: () */ 
+	i0 = i7 - (0x11)			# LN: 159 | 
+	a0 = xmem[i0]			# LN: 159 | 
+	uhalfword(a1) = (0x1)			# LN: 159 | 
+	a0 = a0 + a1			# LN: 159 | 
+	i0 = i7 - (0x11)			# LN: 159 | 
+label_end_95:			# LN: 159 | CYCLE: 5 | RULES: ()
+	xmem[i0] = a0h			# LN: 159 | 
+cline_159_1:			/* LN: 170 | CYCLE: 0 | RULES: () */ 
 endif_0:			/* LN: 118 | CYCLE: 0 | RULES: () */ 
 endif_1:			/* LN: 139 | CYCLE: 0 | RULES: () */ 
-for_end_3:			/* LN: 151 | CYCLE: 0 | RULES: () */ 
-	jmp (__epilogue_198)			# LN: 158 | 
-cline_158_0:			/* LN: 159 | CYCLE: 0 | RULES: () */ 
-__epilogue_198:			/* LN: 159 | CYCLE: 0 | RULES: () */ 
-	i7 = i7 - (0x11)			# LN: 159 | 
-	i7 -= 1			# LN: 159 | 
-	i2 = xmem[i7]; i7 -= 1			# LN: 159, 159 | 
-	ret			# LN: 159 | 
+for_end_3:			/* LN: 159 | CYCLE: 0 | RULES: () */ 
+	jmp (__epilogue_198)			# LN: 170 | 
+cline_170_0:			/* LN: 171 | CYCLE: 0 | RULES: () */ 
+__epilogue_198:			/* LN: 171 | CYCLE: 0 | RULES: () */ 
+	i7 = i7 - (0x11)			# LN: 171 | 
+	i7 -= 1			# LN: 171 | 
+	ret			# LN: 171 | 
 
 
 
@@ -1244,20 +1116,16 @@ cline_45_0:			/* LN: 46 | CYCLE: 0 | RULES: () */
 	i0 = xmem[i0]			# LN: 46 | 
 	i1 = i7 - (0x3)			# LN: 46 | 
 	i0 += 1			# LN: 46 | 
+	i1 = xmem[i1]			# LN: 46 | 
 	x0 = xmem[i0]			# LN: 46 | 
-	i0 = xmem[i1]			# LN: 46 | 
-	uhalfword(a0) = (0x2)			# LN: 46 | 
-	x1 = xmem[i0]			# LN: 46 | 
-	b0 = x0 * x1			# LN: 46 | 
-	call (__int_to_laccum)			# LN: 46 | 
-	a1 =+ b0; b1 =+ a0			# LN: 46, 46 | 
-	a0 =+ b1			# LN: 46 | 
-	call (__mul_sat_laccum)			# LN: 46 | 
+	x1 = xmem[i1]			# LN: 46 | 
 	i0 = i7 - (0x7)			# LN: 46 | 
-	a1g = xmem[i0]; i0 += 1			# LN: 46, 46 | 
-	a1h = xmem[i0]; i0 += 1			# LN: 46, 46 | 
-	a1l = xmem[i0]			# LN: 46 | 
-	a0 = a1 + a0			# LN: 46 | 
+	a0g = xmem[i0]; i0 += 1			# LN: 46, 46 | 
+	a1 = x0 * x1			# LN: 46 | 
+	a0h = xmem[i0]; i0 += 1			# LN: 46, 46 | 
+	a1 = a1 << 1			# LN: 46 | 
+	a0l = xmem[i0]			# LN: 46 | 
+	a0 = a0 + a1			# LN: 46 | 
 	i0 = i7 - (0x7)			# LN: 46 | 
 	xmem[i0] = a0g; i0 += 1			# LN: 46, 46 | 
 	xmem[i0] = a0h; i0 += 1			# LN: 46, 46 | 
@@ -1285,20 +1153,16 @@ cline_47_0:			/* LN: 48 | CYCLE: 0 | RULES: () */
 	i0 = xmem[i0]			# LN: 48 | 
 	i1 = i7 - (0x4)			# LN: 48 | 
 	i0 = i0 + (0x4)			# LN: 48 | 
+	i1 = xmem[i1]			# LN: 48 | 
 	x0 = xmem[i0]			# LN: 48 | 
-	i0 = xmem[i1]			# LN: 48 | 
-	uhalfword(a0) = (0x2)			# LN: 48 | 
-	x1 = xmem[i0]			# LN: 48 | 
-	b0 = x0 * x1			# LN: 48 | 
-	call (__int_to_laccum)			# LN: 48 | 
-	a1 =+ b0; b1 =+ a0			# LN: 48, 48 | 
-	a0 =+ b1			# LN: 48 | 
-	call (__mul_sat_laccum)			# LN: 48 | 
+	x1 = xmem[i1]			# LN: 48 | 
 	i0 = i7 - (0x7)			# LN: 48 | 
-	a1g = xmem[i0]; i0 += 1			# LN: 48, 48 | 
-	a1h = xmem[i0]; i0 += 1			# LN: 48, 48 | 
-	a1l = xmem[i0]			# LN: 48 | 
-	a0 = a1 - a0			# LN: 48 | 
+	a0g = xmem[i0]; i0 += 1			# LN: 48, 48 | 
+	a1 = x0 * x1			# LN: 48 | 
+	a0h = xmem[i0]; i0 += 1			# LN: 48, 48 | 
+	a1 = a1 << 1			# LN: 48 | 
+	a0l = xmem[i0]			# LN: 48 | 
+	a0 = a0 - a1			# LN: 48 | 
 	i0 = i7 - (0x7)			# LN: 48 | 
 	xmem[i0] = a0g; i0 += 1			# LN: 48, 48 | 
 	xmem[i0] = a0h; i0 += 1			# LN: 48, 48 | 

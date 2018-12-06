@@ -83,7 +83,7 @@ import clide.boardconfig.xml.simulator.XmlScpFile;
 	//
 	// argv (optional)
 	//
-	'argv':                         "c:\\Users\\Dekka777\\Desktop\\TesStreams\\Tone_L1k_R3k.wav c:\\Users\\Dekka777\\Desktop\\TesStreams\\output2.wav",
+	'argv':                         "C:\\Users\\student\\Desktop\\ra22-2015\\AADSP2_PROJEKAT\\Day_1_model2\\aadsp2_projekat\\TestStreams\\speech_2ch_2.wav model3_output_speech_2ch_2.wav",
 	
 	//
 	// scp files (optional)

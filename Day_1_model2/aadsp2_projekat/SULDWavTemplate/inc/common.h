@@ -8,7 +8,7 @@
 #define BLOCK_SIZE 16
 #define MAX_NUM_CHANNEL 5
 #define INPUT_GAIN 0.8912509381337456
-int MODE;
+int MODE = 320;
 
 /////////////////////////////////////////////////////////////////////////////////
 

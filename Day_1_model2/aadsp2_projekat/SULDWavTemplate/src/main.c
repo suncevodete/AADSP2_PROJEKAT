@@ -76,7 +76,8 @@ void processing() {
 
 
 	// Napravio lpf i hpf za L i R
-	for (DSPint i = 0; i < BLOCK_SIZE; i++)
+	DSPint i;
+	for (i = 0; i < BLOCK_SIZE; i++)
 	{
 		*tempLptr = *SBPtr0++;
 		*tempRptr = *SBPtr1++;
@@ -116,7 +117,8 @@ void processing() {
 	// Ovde odmah povezujem na Ls i Rs izlaze
 	if (MODE == 320)
 	{
-		for (DSPint i = 0; i < BLOCK_SIZE; i++)
+		DSPint i;
+		for (i = 0; i < BLOCK_SIZE; i++)
 		{
 			*SBPtr0 = *temp_nizL3k_ptr;
 			*SBPtr1 = *temp_nizR3k_ptr;
@@ -136,7 +138,8 @@ void processing() {
 		}
 	} else if (MODE == 220)
 	{
-		for (DSPint i = 0; i < BLOCK_SIZE; i++)
+		DSPint i;
+		for (i = 0; i < BLOCK_SIZE; i++)
 		{
 			*SBPtr0 = *temp_nizL3k_ptr;
 			*SBPtr1 = *temp_nizR3k_ptr;
@@ -152,7 +155,8 @@ void processing() {
 			temp_nizR11k_ptr++;
 		}
 	} else {
-		for (DSPint i = 0; i < BLOCK_SIZE; i++)
+		DSPint i;
+		for (i = 0; i < BLOCK_SIZE; i++)
 		{
 			*SBPtr0++ = *tempLptr;
 			*SBPtr1++ = *tempRptr;
@@ -186,7 +190,7 @@ int main(int argc, char *argv[])
 
 	// Open input wav file
 	//-------------------------------------------------
-	strcpy(WavInputName,"C:\\Users\\student\\Desktop\\ra22-2015\\AADSP2_PROJEKAT\\Day_1_model2\\aadsp2_projekat\\TestStreams\\2ch_lvl_amt_48k.wav");
+	strcpy(WavInputName,argv[0]);
 	wav_in = cl_wavread_open(WavInputName);
 	if(wav_in == NULL)
     {
@@ -197,7 +201,7 @@ int main(int argc, char *argv[])
 
 	// Read input wav header
 	//-------------------------------------------------
-	nChannels = cl_wavread_getnchannels(wav_in);
+	nChannels = 5;
     bitsPerSample = cl_wavread_bits_per_sample(wav_in);
     sampleRate = cl_wavread_frame_rate(wav_in);
     iNumSamples =  cl_wavread_number_of_frames(wav_in);
@@ -205,7 +209,7 @@ int main(int argc, char *argv[])
 
 	// Open output wav file
 	//-------------------------------------------------
-	strcpy(WavOutputName,"model3_output_speech_2ch_2.wav");
+	strcpy(WavOutputName,argv[1]);
 	wav_out = cl_wavwrite_open(WavOutputName, bitsPerSample, nChannels, sampleRate);
 	if(!wav_out)
     {

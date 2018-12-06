@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <CL_PROJECT>
-    <argv>C:\Users\student\Desktop\ra22-2015\AADSP2_PROJEKAT\Day_1_model2\aadsp2_projekat\TestStreams\speech_2ch_2.wav model3_output_speech_2ch_2.wav</argv>
+    <argv>TestStreams\speech_2ch_2.wav OutStreams\speech_2ch_2_model3.wav</argv>
     <FILE_IO_CFG block_type="Input" channels_per_line="2" delay="0" file_mode="PCM" index="0" justification="Left" sample_format="LittleEndian" sample_rate="48000" sample_size="32"/>
     <FILE_IO_CFG block_type="Output" channels_per_line="2" delay="0" file_mode="PCM" index="0" justification="Left" sample_format="LittleEndian" sample_rate="48000" sample_size="32"/>
     <MEMORY_CFG>
-        <ULD_FILE disk_path="C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/WavTemplate.uld"/>
+        <ULD_FILE disk_path="SULDWavTemplate\output\standalone\WavTemplate.uld"/>
     </MEMORY_CFG>
     <PROFILE_CFG enable="on"/>
     <SCP_CFG load_delay="0"/>
