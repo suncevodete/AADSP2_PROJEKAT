@@ -1,2 +1,0 @@
-    Recorded file is 880 samples shorter than the reference file!
-      No differences encountered!
