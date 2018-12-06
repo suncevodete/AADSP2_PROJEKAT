@@ -49,7 +49,7 @@ for %%f in (TestStreams\*.*) do (
 	) > SimulatorConfigurationTemp.sbr
 	
 	: Execute Model 0
-	%SIMULATOR% -project SimulatorConfigurationTemp.sbr -max_cycles 10000000
+	%SIMULATOR% -project SimulatorConfigurationTemp.sbr -max_cycles 1000000
 
 	
 	: Generate new logs

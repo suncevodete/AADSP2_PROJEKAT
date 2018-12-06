@@ -5,7 +5,9 @@
 #include <dsplib\wavefile.h>
 #include <dsplib\timers.h>
 
-DSPfract INITIAL_GAIN = FRACT_NUM(0.0);
+DSPfract INPUT_GAIN = FRACT_NUM(0.8912509381337456);
+DSPint MODE = 320;
+
 DSPfract sampleBuffer[MAX_NUM_CHANNEL][BLOCK_SIZE];
 
 DSPfract x_history0[] = { FRACT_NUM(0.0), FRACT_NUM(0.0) };
@@ -81,8 +83,8 @@ void processing() {
 	{
 		*tempLptr = *SBPtr0++;
 		*tempRptr = *SBPtr1++;
-		*tempLptr = *tempLptr * INITIAL_GAIN;
-		*tempRptr = *tempRptr * INITIAL_GAIN;
+		*tempLptr = *tempLptr * INPUT_GAIN;
+		*tempRptr = *tempRptr * INPUT_GAIN;
 		*temp_nizL11k_ptr = second_order_IIR(*tempLptr, coefficients_11k_lpf, x_history0, y_history0);
 		*temp_nizR11k_ptr = second_order_IIR(*tempRptr, coefficients_11k_lpf, x_history1, y_history1);
 		*temp_nizL5K_ptr = second_order_IIR(*tempLptr, coefficients_5k_hpf, x_history2, y_history2);
@@ -182,11 +184,29 @@ int main(int argc, char *argv[])
 	int bitsPerSample;
     int sampleRate;
     int iNumSamples;
-    int i;
 
 	// Init channel buffers
-	for(i=0; i<MAX_NUM_CHANNEL; i++)
-		memset(&sampleBuffer[i],0,BLOCK_SIZE);
+    int i;
+    for (i = 0; i < MAX_NUM_CHANNEL; i++)
+    	{
+    		int j;
+    		for (j = 0; j < BLOCK_SIZE; j++)
+    		{
+    			sampleBuffer[i][j] = FRACT_NUM(0.0);
+    		}
+    	}
+
+    	for (i = 0; i < BLOCK_SIZE; i++)
+    	{
+    		temp_left[i] = FRACT_NUM(0.0);
+    		temp_right[i] = FRACT_NUM(0.0);
+    		temp_nizL11k[i] = FRACT_NUM(0.0);
+    		temp_nizR11k[i] = FRACT_NUM(0.0);
+    		temp_nizL5k[i] = FRACT_NUM(0.0);
+    		temp_nizR5k[i] = FRACT_NUM(0.0);
+    		temp_nizL3k[i] = FRACT_NUM(0.0);
+    		temp_nizR3k[i] = FRACT_NUM(0.0);
+    	}
 
 	// Open input wav file
 	//-------------------------------------------------

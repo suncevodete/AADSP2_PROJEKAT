@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<settings built="true" last_build_time="1544109060325">
+<settings built="true" last_build_time="1544113946118">
 	<dependencies>
-		<source_file last_build_time="1544109058551" path="src/main.c">
+		<source_file last_build_time="1544113944562" path="src/main.c">
 			<dependency>../../../../../../../../../CirrusDSP/include/stdlib.h</dependency>
 			<dependency>../../../../../../../../../CirrusDSP/include/string.h</dependency>
 			<dependency>../inc/common.h</dependency>

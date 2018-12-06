@@ -50,7 +50,7 @@ import clide.boardconfig.xml.simulator.XmlScpFile;
     'input_justification':          "Left",
     'input_sample_format':          "LittleEndian",
     'input_sample_size':            32,
-    'input_sample_rate':            48000,
+    'input_sample_rate':            8000,
     'input_file_channel_3800':      "",
     'input_file_channel_3801':      "",
     'input_file_channel_3802':      "",
@@ -67,7 +67,7 @@ import clide.boardconfig.xml.simulator.XmlScpFile;
     'output_justification':         "Left",
     'output_sample_format':         "LittleEndian",
     'output_sample_size':           32,
-    'output_sample_rate':           48000,
+    'output_sample_rate':           8000,
     'output_file_channel_3400':     "",
     'output_file_channel_3401':     "",
     'output_file_channel_3402':     "",
@@ -83,7 +83,7 @@ import clide.boardconfig.xml.simulator.XmlScpFile;
 	//
 	// argv (optional)
 	//
-	'argv':                         "C:\\Users\\student\\Desktop\\ra22-2015\\AADSP2_PROJEKAT\\Day_1_model2\\aadsp2_projekat\\TestStreams\\speech_2ch_2.wav model3_output_speech_2ch_2.wav",
+	'argv':                         "C:\\Users\\student\\Desktop\\ra22-2015\\AADSP2_PROJEKAT\\Day_1_model2\\aadsp2_projekat\\TestStreams\\2ch_contour_ne40_24b_48k.wav model3_output_2ch_contour_ne40_24b_48k.wav",
 	
 	//
 	// scp files (optional)

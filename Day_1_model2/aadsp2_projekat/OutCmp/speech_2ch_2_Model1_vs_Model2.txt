@@ -1,2 +1,8 @@
-    Test error! Recorded file is 1289760 samples shorter than the reference file!
-      No differences encountered!
+    Max difference is 1 (1 bits, -96.33dB)
+    1344880 samples compared 
+   -----------------------------------------------------------
+    Dif(bits) |    Samples    |   PERCENT  |   First dif
+   -----------------------------------------------------------
+         1    |         12    |    0.00%   |  0x0003a5a6   
+   -----------------------------------------------------------
+      Error   |         12    |    0.00%              

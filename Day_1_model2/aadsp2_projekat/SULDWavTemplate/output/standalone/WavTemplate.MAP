@@ -6,23 +6,22 @@ Warning #507: Unknown class: Y_OS_CC_GLOBALS
 
 Address class CODE	Address:[0000...FFFF], length 10000
 	Address:[0000...0000], length 0001, <RESERVED for crt0_GEN_0002, class CODE>
-	Address:[0001...0359], length 0359, <RESERVED for main_GEN_0030, class CODE_OVLY>
-	Address:[035A...03D3], length 007A, <RESERVED for udiv_GEN_0000, class CODE_OVLY>
-	Address:[03D4...040D], length 003A, <RESERVED for div_GEN_0000, class CODE_OVLY>
-	Address:[040E...0414], length 0007, <RESERVED for memset_x_GEN_0000, class CODE_OVLY>
-	Address:[0415...041B], length 0007, <RESERVED for strcpy_x2x_GEN_0000, class CODE_OVLY>
-	Address:[041C...041F], length 0004, <RESERVED for crt0_GEN_0003, class CODE_OVLY>
-	Address:[0420...0423], length 0004, <RESERVED for exit_GEN_0000, class CODE_OVLY>
-	Address:[0424...0426], length 0003, <RESERVED for cl_wavread_bits_per_sample_GEN_0000, class CODE_OVLY>
-	Address:[0427...0429], length 0003, <RESERVED for cl_wavread_close_GEN_0000, class CODE_OVLY>
-	Address:[042A...042C], length 0003, <RESERVED for cl_wavread_frame_rate_GEN_0000, class CODE_OVLY>
-	Address:[042D...042F], length 0003, <RESERVED for cl_wavread_number_of_frames_GEN_0000, class CODE_OVLY>
-	Address:[0430...0432], length 0003, <RESERVED for cl_wavread_open_GEN_0000, class CODE_OVLY>
-	Address:[0433...0435], length 0003, <RESERVED for cl_wavread_recvsample_GEN_0000, class CODE_OVLY>
-	Address:[0436...0438], length 0003, <RESERVED for cl_wavwrite_close_GEN_0000, class CODE_OVLY>
-	Address:[0439...043B], length 0003, <RESERVED for cl_wavwrite_open_GEN_0000, class CODE_OVLY>
-	Address:[043C...043E], length 0003, <RESERVED for cl_wavwrite_sendsample_GEN_0000, class CODE_OVLY>
-	Address:[043F...FFFF], length FBC1, <FREE>
+	Address:[0001...039F], length 039F, <RESERVED for main_GEN_0030, class CODE_OVLY>
+	Address:[03A0...0419], length 007A, <RESERVED for udiv_GEN_0000, class CODE_OVLY>
+	Address:[041A...0453], length 003A, <RESERVED for div_GEN_0000, class CODE_OVLY>
+	Address:[0454...045A], length 0007, <RESERVED for strcpy_x2x_GEN_0000, class CODE_OVLY>
+	Address:[045B...045E], length 0004, <RESERVED for crt0_GEN_0003, class CODE_OVLY>
+	Address:[045F...0462], length 0004, <RESERVED for exit_GEN_0000, class CODE_OVLY>
+	Address:[0463...0465], length 0003, <RESERVED for cl_wavread_bits_per_sample_GEN_0000, class CODE_OVLY>
+	Address:[0466...0468], length 0003, <RESERVED for cl_wavread_close_GEN_0000, class CODE_OVLY>
+	Address:[0469...046B], length 0003, <RESERVED for cl_wavread_frame_rate_GEN_0000, class CODE_OVLY>
+	Address:[046C...046E], length 0003, <RESERVED for cl_wavread_number_of_frames_GEN_0000, class CODE_OVLY>
+	Address:[046F...0471], length 0003, <RESERVED for cl_wavread_open_GEN_0000, class CODE_OVLY>
+	Address:[0472...0474], length 0003, <RESERVED for cl_wavread_recvsample_GEN_0000, class CODE_OVLY>
+	Address:[0475...0477], length 0003, <RESERVED for cl_wavwrite_close_GEN_0000, class CODE_OVLY>
+	Address:[0478...047A], length 0003, <RESERVED for cl_wavwrite_open_GEN_0000, class CODE_OVLY>
+	Address:[047B...047D], length 0003, <RESERVED for cl_wavwrite_sendsample_GEN_0000, class CODE_OVLY>
+	Address:[047E...FFFF], length FB82, <FREE>
 
 Address class X	Address:[0000...FFFF], length 10000
 	Address:[0000...0000], length 0001, <RESERVED for crt0_GEN_0000, class X>
@@ -127,58 +126,55 @@ Address class Y	Address:[0000...FFFF], length 10000
                       main_GEN_0027, address 00F5 ,length 0002, class     X_OVLY
                       main_GEN_0028, address 00F7 ,length 0002, class     X_OVLY
                       main_GEN_0029, address 00F9 ,length 0002, class     X_OVLY
-                      main_GEN_0030, address 0001 ,length 0359, class  CODE_OVLY
+                      main_GEN_0030, address 0001 ,length 039F, class  CODE_OVLY
 
 -----------------Module:  crt0(Segment name)
                       crt0_GEN_0000, address 0000 ,length 0001, class          X, at 0000
                       crt0_GEN_0001, address 0000 ,length 0001, class          Y, at 0000
                       crt0_GEN_0002, address 0000 ,length 0001, class       CODE, at 0000
-                      crt0_GEN_0003, address 041C ,length 0004, class  CODE_OVLY
+                      crt0_GEN_0003, address 045B ,length 0004, class  CODE_OVLY
 
 -----------------Module:  div(Segment name)
-                       div_GEN_0000, address 03D4 ,length 003A, class  CODE_OVLY
+                       div_GEN_0000, address 041A ,length 003A, class  CODE_OVLY
 
 -----------------Module:  exit(Segment name)
-                      exit_GEN_0000, address 0420 ,length 0004, class  CODE_OVLY
-
------------------Module:  memset_x(Segment name)
-                  memset_x_GEN_0000, address 040E ,length 0007, class  CODE_OVLY
+                      exit_GEN_0000, address 045F ,length 0004, class  CODE_OVLY
 
 -----------------Module:  simulator_stack(Segment name)
            simulator_stack_GEN_0000, address 0101 ,length 0800, class          X
 
 -----------------Module:  strcpy_x2x(Segment name)
-                strcpy_x2x_GEN_0000, address 0415 ,length 0007, class  CODE_OVLY
+                strcpy_x2x_GEN_0000, address 0454 ,length 0007, class  CODE_OVLY
 
 -----------------Module:  udiv(Segment name)
-                      udiv_GEN_0000, address 035A ,length 007A, class  CODE_OVLY
+                      udiv_GEN_0000, address 03A0 ,length 007A, class  CODE_OVLY
 
 -----------------Module:  cl_wavread_bits_per_sample(Segment name)
-cl_wavread_bits_per_sample_GEN_0000, address 0424 ,length 0003, class  CODE_OVLY
+cl_wavread_bits_per_sample_GEN_0000, address 0463 ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavread_close(Segment name)
-          cl_wavread_close_GEN_0000, address 0427 ,length 0003, class  CODE_OVLY
+          cl_wavread_close_GEN_0000, address 0466 ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavread_frame_rate(Segment name)
-     cl_wavread_frame_rate_GEN_0000, address 042A ,length 0003, class  CODE_OVLY
+     cl_wavread_frame_rate_GEN_0000, address 0469 ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavread_number_of_frames(Segment name)
-cl_wavread_number_of_frames_GEN_0000, address 042D ,length 0003, class  CODE_OVLY
+cl_wavread_number_of_frames_GEN_0000, address 046C ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavread_open(Segment name)
-           cl_wavread_open_GEN_0000, address 0430 ,length 0003, class  CODE_OVLY
+           cl_wavread_open_GEN_0000, address 046F ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavread_recvsample(Segment name)
-     cl_wavread_recvsample_GEN_0000, address 0433 ,length 0003, class  CODE_OVLY
+     cl_wavread_recvsample_GEN_0000, address 0472 ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavwrite_close(Segment name)
-         cl_wavwrite_close_GEN_0000, address 0436 ,length 0003, class  CODE_OVLY
+         cl_wavwrite_close_GEN_0000, address 0475 ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavwrite_open(Segment name)
-          cl_wavwrite_open_GEN_0000, address 0439 ,length 0003, class  CODE_OVLY
+          cl_wavwrite_open_GEN_0000, address 0478 ,length 0003, class  CODE_OVLY
 
 -----------------Module:  cl_wavwrite_sendsample(Segment name)
-    cl_wavwrite_sendsample_GEN_0000, address 043C ,length 0003, class  CODE_OVLY
+    cl_wavwrite_sendsample_GEN_0000, address 047B ,length 0003, class  CODE_OVLY
 
 ---------------SYMBOL(global symbols)							FILE						SEGMENT							CLASS		ADDRESS
 
@@ -345,7 +341,7 @@ X_VX_SRC_4_11_Coef_Phase_Tbl_End_P_1	C:\CirrusDSP\lib\dsplib\cl_src_tables_asm	 
               X_VY_LPC_LPC_ORDER_P1	C:\CirrusDSP\lib\dsplib\cl_lpc_variables_asm	 cl_lpc_variables_asm_GEN_0001		           Y_OVLY		0036
                   Y_RAM_SRCDataVars	C:\CirrusDSP\lib\dsplib\cl_src_data_vars_asm	             Y_RAM_SRCDataVars		           Y_OVLY		FFFFFFFF
                      _CL_HEAPSTEAL_	C:\CirrusDSP\lib\dsplib\crystal32\cl_heapsteal	                -----------			   -----------			0001
-                      _INITIAL_GAIN	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0000		           X_OVLY		00FB
+                        _INPUT_GAIN	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0000		           X_OVLY		00FB
                               _MODE	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0001		           X_OVLY		00FC
                 _X_S_FPT_Background	C:\CirrusDSP\lib\dsplib\crystal32\cl_fft_framework_asm	         CL_FFT_FRAMEWORK_CODE		        CODE_OVLY		00A0
                      _X_S_FPT_Block	C:\CirrusDSP\lib\dsplib\crystal32\cl_fft_framework_asm	         CL_FFT_FRAMEWORK_CODE		        CODE_OVLY		006E
@@ -373,8 +369,8 @@ X_VX_SRC_4_11_Coef_Phase_Tbl_End_P_1	C:\CirrusDSP\lib\dsplib\cl_src_tables_asm	 
                    __CLASS_F_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			0001
                         __CLASS_F_Y	                      CLINK RESERVED	                -----------			   -----------			0000
                    __CLASS_F_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
-                     __CLASS_L_CODE	                      CLINK RESERVED	                -----------			   -----------			043E
-                __CLASS_L_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			043E
+                     __CLASS_L_CODE	                      CLINK RESERVED	                -----------			   -----------			047D
+                __CLASS_L_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			047D
                         __CLASS_L_X	                      CLINK RESERVED	                -----------			   -----------			0900
                   __CLASS_L_X_AVAIL	                      CLINK RESERVED	                -----------			   -----------			0100
                    __CLASS_L_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			0100
@@ -391,7 +387,7 @@ X_VX_SRC_4_11_Coef_Phase_Tbl_End_P_1	C:\CirrusDSP\lib\dsplib\cl_src_tables_asm	 
               __CL_GPI_ISR_ASM_CODE	C:\CirrusDSP\lib\dsplib\cl_gpi_isr_asm	         __CL_GPI_ISR_ASM_CODE		        CODE_OVLY		FFFFFFFF
 __CL_OS_REGISTER_GPI_HANDLER_ASM_CODE	C:\CirrusDSP\lib\dsplib\cl_os_register_gpi_handler_asm	__CL_OS_REGISTER_GPI_HANDLER_ASM_CODE		        CODE_OVLY		FFFFFFFF
   __CL_OS_REGISTER_GPI_HANDLER_CODE	C:\CirrusDSP\lib\dsplib\cl_os_register_gpi_handler	__CL_OS_REGISTER_GPI_HANDLER_CODE		        CODE_OVLY		FFFFFFFF
-                             __INIT	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                        __INIT		             CODE		043F
+                             __INIT	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                        __INIT		             CODE		047E
                     __Intrinsic_abs	                C:\CirrusDSP\lib\abs	                  abs_GEN_0000		        CODE_OVLY		FFFFFFFF
                   __Intrinsic_abshk	              C:\CirrusDSP\lib\abshk	                abshk_GEN_0000		        CODE_OVLY		FFFFFFFF
                   __Intrinsic_abshr	              C:\CirrusDSP\lib\abshr	                abshr_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -475,7 +471,7 @@ __CL_OS_REGISTER_GPI_HANDLER_ASM_CODE	C:\CirrusDSP\lib\dsplib\cl_os_register_gpi
                    __add_sat_laccum	     C:\CirrusDSP\lib\add_sat_laccum	       add_sat_laccum_GEN_0000		        CODE_OVLY		FFFFFFFF
                   __add_sat_ulaccum	    C:\CirrusDSP\lib\add_sat_ulaccum	      add_sat_ulaccum_GEN_0000		        CODE_OVLY		FFFFFFFF
                     __cjump_ulaccum	      C:\CirrusDSP\lib\cjump_ulaccum	        cjump_ulaccum_GEN_0000		        CODE_OVLY		FFFFFFFF
-                              __div	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03D4
+                              __div	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		041A
                         __div_llong	          C:\CirrusDSP\lib\div_llong	            div_llong_GEN_0000		        CODE_OVLY		FFFFFFFF
                    __div_sat_laccum	     C:\CirrusDSP\lib\div_sat_laccum	       div_sat_laccum_GEN_0000		        CODE_OVLY		FFFFFFFF
                   __div_sat_ulaccum	    C:\CirrusDSP\lib\div_sat_ulaccum	      div_sat_ulaccum_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -520,13 +516,13 @@ __CL_OS_REGISTER_GPI_HANDLER_ASM_CODE	C:\CirrusDSP\lib\dsplib\cl_os_register_gpi
                     __rshift_laccum	      C:\CirrusDSP\lib\rshift_laccum	        rshift_laccum_GEN_0000		        CODE_OVLY		FFFFFFFF
                      __rshift_llong	       C:\CirrusDSP\lib\rshift_llong	         rshift_llong_GEN_0000		        CODE_OVLY		FFFFFFFF
                    __rshift_ulaccum	     C:\CirrusDSP\lib\rshift_ulaccum	       rshift_ulaccum_GEN_0000		        CODE_OVLY		FFFFFFFF
-                            __start	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0003		        CODE_OVLY		041C
+                            __start	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0003		        CODE_OVLY		045B
                    __sub_sat_laccum	     C:\CirrusDSP\lib\sub_sat_laccum	       sub_sat_laccum_GEN_0000		        CODE_OVLY		FFFFFFFF
                   __sub_sat_ulaccum	    C:\CirrusDSP\lib\sub_sat_ulaccum	      sub_sat_ulaccum_GEN_0000		        CODE_OVLY		FFFFFFFF
                   __uaccum_to_accum	    C:\CirrusDSP\lib\uaccum_to_accum	      uaccum_to_accum_GEN_0000		        CODE_OVLY		FFFFFFFF
                   __uaccum_to_fract	    C:\CirrusDSP\lib\uaccum_to_fract	      uaccum_to_fract_GEN_0000		        CODE_OVLY		FFFFFFFF
                  __uaccum_to_lfract	   C:\CirrusDSP\lib\uaccum_to_lfract	     uaccum_to_lfract_GEN_0000		        CODE_OVLY		FFFFFFFF
-                             __udiv	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		035A
+                             __udiv	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03A0
                        __udiv_llong	         C:\CirrusDSP\lib\udiv_llong	           udiv_llong_GEN_0000		        CODE_OVLY		FFFFFFFF
                     __uint_to_accum	      C:\CirrusDSP\lib\uint_to_accum	        uint_to_accum_GEN_0000		        CODE_OVLY		FFFFFFFF
                     __uint_to_fract	      C:\CirrusDSP\lib\uint_to_fract	        uint_to_fract_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -689,23 +685,23 @@ _cl_input_window_overlap_50_percent	   C:\CirrusDSP\lib\dsplib\cl_window	       
                _cl_tdf_init_buffers	C:\CirrusDSP\lib\dsplib\cl_td_framework	          CL_TD_FRAMEWORK_CODE		        CODE_OVLY		002E
                  _cl_tdf_postmalloc	C:\CirrusDSP\lib\dsplib\cl_td_framework	          CL_TD_FRAMEWORK_CODE		        CODE_OVLY		008F
                   _cl_tdf_premalloc	C:\CirrusDSP\lib\dsplib\cl_td_framework	          CL_TD_FRAMEWORK_CODE		        CODE_OVLY		005D
-        _cl_wavread_bits_per_sample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	cl_wavread_bits_per_sample_GEN_0000		        CODE_OVLY		0424
-                  _cl_wavread_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	     cl_wavread_close_GEN_0000		        CODE_OVLY		0427
+        _cl_wavread_bits_per_sample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	cl_wavread_bits_per_sample_GEN_0000		        CODE_OVLY		0463
+                  _cl_wavread_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	     cl_wavread_close_GEN_0000		        CODE_OVLY		0466
                     _cl_wavread_eof	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_eof	       cl_wavread_eof_GEN_0000		        CODE_OVLY		FFFFFFFF
-             _cl_wavread_frame_rate	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	cl_wavread_frame_rate_GEN_0000		        CODE_OVLY		042A
+             _cl_wavread_frame_rate	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	cl_wavread_frame_rate_GEN_0000		        CODE_OVLY		0469
            _cl_wavread_getnchannels	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_getnchannels	cl_wavread_getnchannels_GEN_0000		        CODE_OVLY		FFFFFFFF
-       _cl_wavread_number_of_frames	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	cl_wavread_number_of_frames_GEN_0000		        CODE_OVLY		042D
-                   _cl_wavread_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	      cl_wavread_open_GEN_0000		        CODE_OVLY		0430
-             _cl_wavread_recvsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	cl_wavread_recvsample_GEN_0000		        CODE_OVLY		0433
+       _cl_wavread_number_of_frames	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	cl_wavread_number_of_frames_GEN_0000		        CODE_OVLY		046C
+                   _cl_wavread_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	      cl_wavread_open_GEN_0000		        CODE_OVLY		046F
+             _cl_wavread_recvsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	cl_wavread_recvsample_GEN_0000		        CODE_OVLY		0472
           _cl_wavread_sample_number	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_sample_number	cl_wavread_sample_number_GEN_0000		        CODE_OVLY		FFFFFFFF
-                 _cl_wavwrite_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	    cl_wavwrite_close_GEN_0000		        CODE_OVLY		0436
-                  _cl_wavwrite_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	     cl_wavwrite_open_GEN_0000		        CODE_OVLY		0439
+                 _cl_wavwrite_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	    cl_wavwrite_close_GEN_0000		        CODE_OVLY		0475
+                  _cl_wavwrite_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	     cl_wavwrite_open_GEN_0000		        CODE_OVLY		0478
          _cl_wavwrite_sample_number	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sample_number	cl_wavwrite_sample_number_GEN_0000		        CODE_OVLY		FFFFFFFF
-            _cl_wavwrite_sendsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	cl_wavwrite_sendsample_GEN_0000		        CODE_OVLY		043C
+            _cl_wavwrite_sendsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	cl_wavwrite_sendsample_GEN_0000		        CODE_OVLY		047B
               _coefficients_11k_lpf	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0006		           X_OVLY		00D1
                _coefficients_3k_hpf	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0007		           X_OVLY		00D7
                _coefficients_5k_hpf	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0008		           X_OVLY		00DD
-                              _exit	               C:\CirrusDSP\lib\exit	                 exit_GEN_0000		        CODE_OVLY		0420
+                              _exit	               C:\CirrusDSP\lib\exit	                 exit_GEN_0000		        CODE_OVLY		045F
                             _fclose	C:\CirrusDSP\lib\dsplib\crystal32\fclose	               fclose_GEN_0000		        CODE_OVLY		FFFFFFFF
                            _fconfig	C:\CirrusDSP\lib\dsplib\crystal32\fconfig	              fconfig_GEN_0000		        CODE_OVLY		FFFFFFFF
                               _feof	C:\CirrusDSP\lib\dsplib\crystal32\feof	                 feof_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -739,11 +735,11 @@ _cl_input_window_overlap_50_percent	   C:\CirrusDSP\lib\dsplib\cl_window	       
                       _memcpy_xy2xy	       C:\CirrusDSP\lib\memcpy_xy2xy	         memcpy_xy2xy_GEN_0000		        CODE_OVLY		FFFFFFFF
                         _memcpy_y2x	         C:\CirrusDSP\lib\memcpy_y2x	           memcpy_y2x_GEN_0000		        CODE_OVLY		FFFFFFFF
                         _memcpy_y2y	         C:\CirrusDSP\lib\memcpy_y2y	           memcpy_y2y_GEN_0000		        CODE_OVLY		FFFFFFFF
-                            _memset	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		040E
-                          _memset_x	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		040E
+                            _memset	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		FFFFFFFF
+                          _memset_x	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		FFFFFFFF
                           _memset_y	           C:\CirrusDSP\lib\memset_y	             memset_y_GEN_0000		        CODE_OVLY		FFFFFFFF
                             _printf	C:\CirrusDSP\lib\dsplib\crystal32\printf	               printf_GEN_0000		        CODE_OVLY		FFFFFFFF
-                        _processing	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00CC
+                        _processing	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0112
                               _putc	C:\CirrusDSP\lib\dsplib\crystal32\fputc	                fputc_GEN_0000		        CODE_OVLY		FFFFFFFF
                            _putchar	C:\CirrusDSP\lib\dsplib\crystal32\putchar	              putchar_GEN_0000		        CODE_OVLY		FFFFFFFF
                               _puts	C:\CirrusDSP\lib\dsplib\crystal32\puts_x	               puts_x_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -754,14 +750,14 @@ _cl_input_window_overlap_50_percent	   C:\CirrusDSP\lib\dsplib\cl_window	       
                             _rgethi	             C:\CirrusDSP\lib\rgethi	               rgethi_GEN_0000		        CODE_OVLY		FFFFFFFF
                             _rgetlo	             C:\CirrusDSP\lib\rgetlo	               rgetlo_GEN_0000		        CODE_OVLY		FFFFFFFF
                       _sampleBuffer	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0009		           X_OVLY		0001
-                  _second_order_IIR	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D4
+                  _second_order_IIR	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		031A
                           _set_mr_r	           C:\CirrusDSP\lib\set_mr_r	             set_mr_r_GEN_0000		        CODE_OVLY		FFFFFFFF
                           _set_mr_s	           C:\CirrusDSP\lib\set_mr_s	             set_mr_s_GEN_0000		        CODE_OVLY		FFFFFFFF
                          _set_mr_sr	          C:\CirrusDSP\lib\set_mr_sr	            set_mr_sr_GEN_0000		        CODE_OVLY		FFFFFFFF
                            _sprintf	C:\CirrusDSP\lib\dsplib\crystal32\sprintf	              sprintf_GEN_0000		        CODE_OVLY		FFFFFFFF
                             _strcmp	             C:\CirrusDSP\lib\strcmp	               strcmp_GEN_0000		        CODE_OVLY		FFFFFFFF
-                            _strcpy	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0415
-                        _strcpy_x2x	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0415
+                            _strcpy	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0454
+                        _strcpy_x2x	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0454
                         _strcpy_x2y	         C:\CirrusDSP\lib\strcpy_x2y	           strcpy_x2y_GEN_0000		        CODE_OVLY		FFFFFFFF
                         _strcpy_y2x	         C:\CirrusDSP\lib\strcpy_y2x	           strcpy_y2x_GEN_0000		        CODE_OVLY		FFFFFFFF
                         _strcpy_y2y	         C:\CirrusDSP\lib\strcpy_y2y	           strcpy_y2y_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -930,29 +926,29 @@ cl_os_register_gpi_handler_asm_GEN_0000	C:\CirrusDSP\lib\dsplib\cl_os_register_g
                 cl_tdf_init_buffers	C:\CirrusDSP\lib\dsplib\crystal32\cl_td_framework_asm	      CL_TD_FRAMEWORK_ASM_CODE		        CODE_OVLY		0051
                   cl_tdf_postmalloc	C:\CirrusDSP\lib\dsplib\crystal32\cl_td_framework_asm	      CL_TD_FRAMEWORK_ASM_CODE		        CODE_OVLY		0089
                    cl_tdf_premalloc	C:\CirrusDSP\lib\dsplib\crystal32\cl_td_framework_asm	      CL_TD_FRAMEWORK_ASM_CODE		        CODE_OVLY		0016
-cl_wavread_bits_per_sample_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	cl_wavread_bits_per_sample_GEN_0000		        CODE_OVLY		0424
-          cl_wavread_close_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	     cl_wavread_close_GEN_0000		        CODE_OVLY		0427
+cl_wavread_bits_per_sample_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	cl_wavread_bits_per_sample_GEN_0000		        CODE_OVLY		0463
+          cl_wavread_close_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	     cl_wavread_close_GEN_0000		        CODE_OVLY		0466
             cl_wavread_eof_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_eof	       cl_wavread_eof_GEN_0000		        CODE_OVLY		FFFFFFFF
-     cl_wavread_frame_rate_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	cl_wavread_frame_rate_GEN_0000		        CODE_OVLY		042A
+     cl_wavread_frame_rate_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	cl_wavread_frame_rate_GEN_0000		        CODE_OVLY		0469
    cl_wavread_getnchannels_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_getnchannels	cl_wavread_getnchannels_GEN_0000		        CODE_OVLY		FFFFFFFF
-cl_wavread_number_of_frames_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	cl_wavread_number_of_frames_GEN_0000		        CODE_OVLY		042D
-           cl_wavread_open_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	      cl_wavread_open_GEN_0000		        CODE_OVLY		0430
-     cl_wavread_recvsample_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	cl_wavread_recvsample_GEN_0000		        CODE_OVLY		0433
+cl_wavread_number_of_frames_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	cl_wavread_number_of_frames_GEN_0000		        CODE_OVLY		046C
+           cl_wavread_open_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	      cl_wavread_open_GEN_0000		        CODE_OVLY		046F
+     cl_wavread_recvsample_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	cl_wavread_recvsample_GEN_0000		        CODE_OVLY		0472
   cl_wavread_sample_number_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_sample_number	cl_wavread_sample_number_GEN_0000		        CODE_OVLY		FFFFFFFF
-         cl_wavwrite_close_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	    cl_wavwrite_close_GEN_0000		        CODE_OVLY		0436
-          cl_wavwrite_open_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	     cl_wavwrite_open_GEN_0000		        CODE_OVLY		0439
+         cl_wavwrite_close_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	    cl_wavwrite_close_GEN_0000		        CODE_OVLY		0475
+          cl_wavwrite_open_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	     cl_wavwrite_open_GEN_0000		        CODE_OVLY		0478
  cl_wavwrite_sample_number_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sample_number	cl_wavwrite_sample_number_GEN_0000		        CODE_OVLY		FFFFFFFF
-    cl_wavwrite_sendsample_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	cl_wavwrite_sendsample_GEN_0000		        CODE_OVLY		043C
+    cl_wavwrite_sendsample_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	cl_wavwrite_sendsample_GEN_0000		        CODE_OVLY		047B
               copy_brick_to_syncbuf	C:\CirrusDSP\lib\dsplib\crystal32\cl_td_framework_asm	      CL_TD_FRAMEWORK_ASM_CODE		        CODE_OVLY		00D3
                       crt0_GEN_0000	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0000		                X		0000
                       crt0_GEN_0001	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0001		                Y		0000
                       crt0_GEN_0002	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0002		             CODE		0000
-                      crt0_GEN_0003	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0003		        CODE_OVLY		041C
-                       div_GEN_0000	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03D4
+                      crt0_GEN_0003	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0003		        CODE_OVLY		045B
+                       div_GEN_0000	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		041A
                  div_llong_GEN_0000	          C:\CirrusDSP\lib\div_llong	            div_llong_GEN_0000		        CODE_OVLY		FFFFFFFF
             div_sat_laccum_GEN_0000	     C:\CirrusDSP\lib\div_sat_laccum	       div_sat_laccum_GEN_0000		        CODE_OVLY		FFFFFFFF
            div_sat_ulaccum_GEN_0000	    C:\CirrusDSP\lib\div_sat_ulaccum	      div_sat_ulaccum_GEN_0000		        CODE_OVLY		FFFFFFFF
-                      exit_GEN_0000	               C:\CirrusDSP\lib\exit	                 exit_GEN_0000		        CODE_OVLY		0420
+                      exit_GEN_0000	               C:\CirrusDSP\lib\exit	                 exit_GEN_0000		        CODE_OVLY		045F
                     fclose_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\fclose	               fclose_GEN_0000		        CODE_OVLY		FFFFFFFF
                    fconfig_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\fconfig	              fconfig_GEN_0000		        CODE_OVLY		FFFFFFFF
                       feof_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\feof	                 feof_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -1046,7 +1042,7 @@ cl_wavread_number_of_frames_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavrea
               memcpy_xy2xy_GEN_0000	       C:\CirrusDSP\lib\memcpy_xy2xy	         memcpy_xy2xy_GEN_0000		        CODE_OVLY		FFFFFFFF
                 memcpy_y2x_GEN_0000	         C:\CirrusDSP\lib\memcpy_y2x	           memcpy_y2x_GEN_0000		        CODE_OVLY		FFFFFFFF
                 memcpy_y2y_GEN_0000	         C:\CirrusDSP\lib\memcpy_y2y	           memcpy_y2y_GEN_0000		        CODE_OVLY		FFFFFFFF
-                  memset_x_GEN_0000	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		040E
+                  memset_x_GEN_0000	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		FFFFFFFF
                   memset_y_GEN_0000	           C:\CirrusDSP\lib\memset_y	             memset_y_GEN_0000		        CODE_OVLY		FFFFFFFF
                        mod_GEN_0000	                C:\CirrusDSP\lib\mod	                  mod_GEN_0000		        CODE_OVLY		FFFFFFFF
                  mod_llong_GEN_0000	          C:\CirrusDSP\lib\mod_llong	            mod_llong_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -1076,7 +1072,7 @@ cl_wavread_number_of_frames_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavrea
                      src_buf_y_Base	C:\CirrusDSP\lib\dsplib\cl_src_data_vars_asm	                src_buf_y_Base		           Y_OVLY		FFFFFFFF
                      src_tbl_x_Base	C:\CirrusDSP\lib\dsplib\cl_src_tables_asm	                src_tbl_x_Base		           X_OVLY		FFFFFFFF
                     strcmp_GEN_0000	             C:\CirrusDSP\lib\strcmp	               strcmp_GEN_0000		        CODE_OVLY		FFFFFFFF
-                strcpy_x2x_GEN_0000	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0415
+                strcpy_x2x_GEN_0000	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0454
                 strcpy_x2y_GEN_0000	         C:\CirrusDSP\lib\strcpy_x2y	           strcpy_x2y_GEN_0000		        CODE_OVLY		FFFFFFFF
                 strcpy_y2x_GEN_0000	         C:\CirrusDSP\lib\strcpy_y2x	           strcpy_y2x_GEN_0000		        CODE_OVLY		FFFFFFFF
                 strcpy_y2y_GEN_0000	         C:\CirrusDSP\lib\strcpy_y2y	           strcpy_y2y_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -1087,7 +1083,7 @@ cl_wavread_number_of_frames_GEN_0000	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavrea
            uaccum_to_accum_GEN_0000	    C:\CirrusDSP\lib\uaccum_to_accum	      uaccum_to_accum_GEN_0000		        CODE_OVLY		FFFFFFFF
            uaccum_to_fract_GEN_0000	    C:\CirrusDSP\lib\uaccum_to_fract	      uaccum_to_fract_GEN_0000		        CODE_OVLY		FFFFFFFF
           uaccum_to_lfract_GEN_0000	   C:\CirrusDSP\lib\uaccum_to_lfract	     uaccum_to_lfract_GEN_0000		        CODE_OVLY		FFFFFFFF
-                      udiv_GEN_0000	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		035A
+                      udiv_GEN_0000	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03A0
                 udiv_llong_GEN_0000	         C:\CirrusDSP\lib\udiv_llong	           udiv_llong_GEN_0000		        CODE_OVLY		FFFFFFFF
                    uhrbits_GEN_0000	            C:\CirrusDSP\lib\uhrbits	              uhrbits_GEN_0000		        CODE_OVLY		FFFFFFFF
              uint_to_accum_GEN_0000	      C:\CirrusDSP\lib\uint_to_accum	        uint_to_accum_GEN_0000		        CODE_OVLY		FFFFFFFF
@@ -1127,11 +1123,11 @@ y_TDF_FG_temp_td_blocksize2_plus_extra	C:\CirrusDSP\lib\dsplib\crystal32\cl_td_f
 
 ---------------SYMBOL(relocation symbols)						FILE						SEGMENT							CLASS		ADDRESS  
 
-                      _INITIAL_GAIN	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0000		           X_OVLY		00FB
+                        _INPUT_GAIN	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0000		           X_OVLY		00FB
                               _MODE	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0001		           X_OVLY		00FC
-                     __epilogue_196	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0357
-                     __epilogue_198	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D1
-                     __epilogue_200	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C9
+                     __epilogue_196	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		039D
+                     __epilogue_198	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0317
+                     __epilogue_200	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		010F
                __extractedConst_0_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0002		           X_OVLY		00FD
                __extractedConst_1_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0003		           X_OVLY		00FE
                __extractedConst_2_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0004		           X_OVLY		00FF
@@ -1140,9 +1136,9 @@ y_TDF_FG_temp_td_blocksize2_plus_extra	C:\CirrusDSP\lib\dsplib\crystal32\cl_td_f
                _coefficients_3k_hpf	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0007		           X_OVLY		00D7
                _coefficients_5k_hpf	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0008		           X_OVLY		00DD
                               _main	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0001
-                        _processing	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00CC
+                        _processing	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0112
                       _sampleBuffer	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0009		           X_OVLY		0001
-                  _second_order_IIR	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D4
+                  _second_order_IIR	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		031A
                          _temp_left	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0010		           X_OVLY		0051
                       _temp_nizL11k	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0011		           X_OVLY		0061
                        _temp_nizL3k	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0012		           X_OVLY		0071
@@ -1163,255 +1159,273 @@ y_TDF_FG_temp_td_blocksize2_plus_extra	C:\CirrusDSP\lib\dsplib\crystal32\cl_td_f
                         _y_history3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0027		           X_OVLY		00F5
                         _y_history4	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0028		           X_OVLY		00F7
                         _y_history5	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0029		           X_OVLY		00F9
-                        cline_100_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01B2
-                        cline_101_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01B7
-                        cline_102_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01BC
-                        cline_103_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01C6
-                        cline_104_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01CB
-                        cline_105_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01D0
-                        cline_108_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01D9
-                        cline_109_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01DC
-                        cline_110_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01DF
-                        cline_111_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01E2
-                        cline_112_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01E5
-                        cline_113_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01E8
-                        cline_114_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01EB
-                        cline_115_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01EE
-                        cline_118_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01F2
-                        cline_121_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01F6
-                        cline_121_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		024D
-                        cline_123_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01FC
-                        cline_124_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0202
-                        cline_125_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0208
-                        cline_126_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		020E
-                        cline_127_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0214
-                        cline_128_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0219
-                        cline_129_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		021E
-                        cline_130_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0223
-                        cline_131_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0228
-                        cline_132_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		022D
-                        cline_133_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0232
-                        cline_134_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0237
-                        cline_135_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		023C
-                        cline_136_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0241
-                        cline_137_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0246
-                        cline_139_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0251
-                        cline_142_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0255
-                        cline_142_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		029C
-                        cline_144_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		025B
-                        cline_145_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0261
-                        cline_146_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0267
-                        cline_147_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		026D
-                        cline_148_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0272
-                        cline_149_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0277
-                        cline_150_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		027C
-                        cline_151_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0281
-                        cline_152_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0286
-                        cline_153_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		028B
-                        cline_154_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0290
-                        cline_155_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0295
-                        cline_159_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02A0
-                        cline_159_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D0
-                        cline_161_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02AB
-                        cline_162_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02B6
-                        cline_163_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02BB
-                        cline_164_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02C0
-                        cline_165_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02C5
-                        cline_166_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02CA
-                        cline_170_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D1
-                        cline_173_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0008
-                        cline_188_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		000C
-                        cline_188_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0019
-                        cline_189_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0013
-                        cline_193_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0020
-                        cline_194_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0025
-                        cline_195_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0029
-                        cline_198_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		002B
-                        cline_204_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		002E
-                        cline_205_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0033
-                        cline_206_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0038
-                        cline_207_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		003D
-                        cline_212_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0045
-                        cline_213_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0050
-                        cline_214_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0054
-                        cline_217_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0056
-                        cline_230_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0061
-                        cline_230_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C1
-                        cline_232_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0065
-                        cline_232_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		008D
-                        cline_234_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		006E
-                        cline_234_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0087
-                        cline_236_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0073
-                        cline_237_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0080
-                        cline_241_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		008E
-                        cline_243_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0092
-                        cline_243_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00BA
-                        cline_245_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		009B
-                        cline_245_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00B4
-                        cline_247_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00A8
-                        cline_248_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00AD
-                        cline_256_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C4
-                        cline_257_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C7
-                        cline_260_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C9
-                         cline_42_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02DF
-                         cline_43_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02E4
-                         cline_45_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02F2
-                         cline_46_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0304
-                         cline_47_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0315
-                         cline_48_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0327
-                         cline_49_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0338
-                         cline_51_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		033F
-                         cline_52_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0346
-                         cline_53_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		034D
-                         cline_54_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0352
-                         cline_56_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0357
-                         cline_59_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00CF
-                         cline_61_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D2
-                         cline_62_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D5
-                         cline_63_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D8
-                         cline_64_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00DB
-                         cline_65_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00DE
-                         cline_68_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00E1
-                         cline_69_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00E4
-                         cline_70_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00E7
-                         cline_71_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00EA
-                         cline_72_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00ED
-                         cline_73_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00F0
-                         cline_74_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00F3
-                         cline_75_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00F6
-                         cline_80_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00FA
-                         cline_80_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01D6
-                         cline_82_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0105
-                         cline_83_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0110
-                         cline_84_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0118
-                         cline_85_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0120
-                         cline_86_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		012E
-                         cline_87_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		013C
-                         cline_88_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		014A
-                         cline_89_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		014F
-                         cline_90_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0157
-                         cline_91_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0165
-                         cline_92_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		016A
-                         cline_93_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0172
-                         cline_94_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0180
-                         cline_95_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0185
-                         cline_96_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		018D
-                         cline_97_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		019B
-                         cline_98_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01A0
-                         cline_99_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01A8
-                             else_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		024D
-                             else_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		029C
-                             else_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		002B
-                             else_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0056
-                            endif_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D0
-                            endif_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D0
-                            endif_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		002B
-                            endif_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0056
-                              for_5	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0059
-                              for_7	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0068
-                              for_9	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0095
-                          for_end_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01D6
-                          for_end_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		024C
-                          for_end_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		029B
-                          for_end_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D0
-                          for_end_4	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0019
-                          for_end_5	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C1
-                          for_end_6	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		008D
-                          for_end_7	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0087
-                          for_end_8	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00BA
-                          for_end_9	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00B4
-                 init_latch_label_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01D0
-                 init_latch_label_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0246
-                 init_latch_label_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0295
-                 init_latch_label_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02CA
-                 init_latch_label_4	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0013
-                 init_latch_label_5	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0080
-                 init_latch_label_6	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0087
-                 init_latch_label_7	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00AD
-                 init_latch_label_8	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00B4
-                 init_latch_label_9	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00BA
-                     label_begin_92	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00FA
-                     label_begin_93	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01F6
-                     label_begin_94	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0255
-                     label_begin_95	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02A0
-                     label_begin_96	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		000C
-                     label_begin_97	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0065
-                     label_begin_98	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0092
-                       label_end_92	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01D5
-                       label_end_93	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		024B
-                       label_end_94	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		029A
-                       label_end_95	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02CF
-                       label_end_96	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0018
-                       label_end_97	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		008C
-                       label_end_98	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00B9
-                            __start	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0003		        CODE_OVLY		041C
-                              __div	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03D4
-                       __epilogue_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0407
-                      comparation_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03E0
-                      comparation_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03E7
-                      comparation_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03F0
-                      comparation_3	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03F7
-                             else_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03EB
-                             else_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03FB
-                             else_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03FE
-                             else_3	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0401
-                             else_4	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0406
-                            endif_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03EB
-                            endif_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03FB
-                            endif_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03FE
-                            endif_3	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0401
-                             land_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03E8
-                             land_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		03F8
-                              _exit	               C:\CirrusDSP\lib\exit	                 exit_GEN_0000		        CODE_OVLY		0420
-                            _memset	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		040E
-                          _memset_x	           C:\CirrusDSP\lib\memset_x	             memset_x_GEN_0000		        CODE_OVLY		040E
+                        cline_100_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01E6
+                        cline_101_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01EE
+                        cline_102_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01F8
+                        cline_103_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01FD
+                        cline_104_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0202
+                        cline_105_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		020C
+                        cline_106_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0211
+                        cline_107_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0216
+                        cline_110_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		021F
+                        cline_111_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0222
+                        cline_112_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0225
+                        cline_113_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0228
+                        cline_114_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		022B
+                        cline_115_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		022E
+                        cline_116_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0231
+                        cline_117_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0234
+                        cline_120_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0238
+                        cline_123_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		023C
+                        cline_123_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0293
+                        cline_125_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0242
+                        cline_126_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0248
+                        cline_127_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		024E
+                        cline_128_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0254
+                        cline_129_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		025A
+                        cline_130_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		025F
+                        cline_131_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0264
+                        cline_132_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0269
+                        cline_133_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		026E
+                        cline_134_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0273
+                        cline_135_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0278
+                        cline_136_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		027D
+                        cline_137_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0282
+                        cline_138_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0287
+                        cline_139_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		028C
+                        cline_141_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0297
+                        cline_144_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		029B
+                        cline_144_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02E2
+                        cline_146_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02A1
+                        cline_147_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02A7
+                        cline_148_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02AD
+                        cline_149_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02B3
+                        cline_150_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02B8
+                        cline_151_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02BD
+                        cline_152_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02C2
+                        cline_153_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02C7
+                        cline_154_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02CC
+                        cline_155_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D1
+                        cline_156_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02D6
+                        cline_157_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02DB
+                        cline_161_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02E6
+                        cline_161_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0316
+                        cline_163_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02F1
+                        cline_164_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02FC
+                        cline_165_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0301
+                        cline_166_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0306
+                        cline_167_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		030B
+                        cline_168_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0310
+                        cline_172_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0317
+                        cline_175_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0008
+                        cline_190_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		000C
+                        cline_190_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0028
+                        cline_193_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0010
+                        cline_193_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0022
+                        cline_195_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		001C
+                        cline_199_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		002D
+                        cline_199_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		005F
+                        cline_201_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0033
+                        cline_202_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0039
+                        cline_203_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		003F
+                        cline_204_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0045
+                        cline_205_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		004B
+                        cline_206_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0051
+                        cline_207_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0057
+                        cline_208_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0059
+                        cline_213_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0066
+                        cline_214_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		006B
+                        cline_215_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		006F
+                        cline_218_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0071
+                        cline_224_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0074
+                        cline_225_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0079
+                        cline_226_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		007E
+                        cline_227_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0083
+                        cline_232_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		008B
+                        cline_233_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0096
+                        cline_234_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		009A
+                        cline_237_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		009C
+                        cline_250_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00A7
+                        cline_250_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0107
+                        cline_252_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00AB
+                        cline_252_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D3
+                        cline_254_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00B4
+                        cline_254_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00CD
+                        cline_256_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00B9
+                        cline_257_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C6
+                        cline_261_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D4
+                        cline_263_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D8
+                        cline_263_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0100
+                        cline_265_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00E1
+                        cline_265_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00FA
+                        cline_267_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00EE
+                        cline_268_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00F3
+                        cline_276_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		010A
+                        cline_277_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		010D
+                        cline_280_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		010F
+                         cline_44_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0325
+                         cline_45_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		032A
+                         cline_47_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0338
+                         cline_48_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		034A
+                         cline_49_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		035B
+                         cline_50_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		036D
+                         cline_51_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		037E
+                         cline_53_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0385
+                         cline_54_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		038C
+                         cline_55_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0393
+                         cline_56_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0398
+                         cline_58_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		039D
+                         cline_61_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0115
+                         cline_63_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0118
+                         cline_64_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		011B
+                         cline_65_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		011E
+                         cline_66_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0121
+                         cline_67_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0124
+                         cline_70_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0127
+                         cline_71_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		012A
+                         cline_72_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		012D
+                         cline_73_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0130
+                         cline_74_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0133
+                         cline_75_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0136
+                         cline_76_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0139
+                         cline_77_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		013C
+                         cline_82_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0140
+                         cline_82_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		021C
+                         cline_84_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		014B
+                         cline_85_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0156
+                         cline_86_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		015E
+                         cline_87_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0166
+                         cline_88_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0174
+                         cline_89_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0182
+                         cline_90_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0190
+                         cline_91_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0195
+                         cline_92_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		019D
+                         cline_93_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01AB
+                         cline_94_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01B0
+                         cline_95_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01B8
+                         cline_96_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01C6
+                         cline_97_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01CB
+                         cline_98_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01D3
+                         cline_99_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		01E1
+                             else_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0293
+                             else_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02E2
+                             else_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0071
+                             else_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		009C
+                            endif_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0316
+                            endif_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0316
+                            endif_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0071
+                            endif_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		009C
+                             for_11	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00DB
+                              for_7	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		009F
+                              for_9	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00AE
+                          for_end_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		021C
+                          for_end_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0292
+                         for_end_10	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0100
+                         for_end_11	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00FA
+                          for_end_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02E1
+                          for_end_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0316
+                          for_end_4	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0028
+                          for_end_5	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0022
+                          for_end_6	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		005F
+                          for_end_7	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0107
+                          for_end_8	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D3
+                          for_end_9	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00CD
+                 init_latch_label_0	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0216
+                 init_latch_label_1	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		028C
+                init_latch_label_10	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00FA
+                init_latch_label_11	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0100
+                 init_latch_label_2	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02DB
+                 init_latch_label_3	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0310
+                 init_latch_label_4	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		001C
+                 init_latch_label_5	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0022
+                 init_latch_label_6	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0059
+                 init_latch_label_7	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00C6
+                 init_latch_label_8	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00CD
+                 init_latch_label_9	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00F3
+                    label_begin_100	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D8
+                     label_begin_92	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0140
+                     label_begin_93	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		023C
+                     label_begin_94	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		029B
+                     label_begin_95	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02E6
+                     label_begin_96	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0010
+                     label_begin_97	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		000C
+                     label_begin_98	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		002D
+                     label_begin_99	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00AB
+                      label_end_100	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00FF
+                       label_end_92	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		021B
+                       label_end_93	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0291
+                       label_end_94	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		02E0
+                       label_end_95	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0315
+                       label_end_96	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0021
+                       label_end_97	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		0027
+                       label_end_98	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		005E
+                       label_end_99	C:/Users/student/Desktop/ra22-2015/AADSP2_PROJEKAT/Day_1_model2/aadsp2_projekat/SULDWavTemplate/output/standalone/src/main	                 main_GEN_0030		        CODE_OVLY		00D2
+                            __start	               C:\CirrusDSP\lib\crt0	                 crt0_GEN_0003		        CODE_OVLY		045B
+                              __div	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		041A
+                       __epilogue_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		044D
+                      comparation_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0426
+                      comparation_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		042D
+                      comparation_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0436
+                      comparation_3	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		043D
+                             else_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0431
+                             else_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0441
+                             else_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0444
+                             else_3	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0447
+                             else_4	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		044C
+                            endif_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0431
+                            endif_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0441
+                            endif_2	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0444
+                            endif_3	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		0447
+                             land_0	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		042E
+                             land_1	                C:\CirrusDSP\lib\div	                  div_GEN_0000		        CODE_OVLY		043E
+                              _exit	               C:\CirrusDSP\lib\exit	                 exit_GEN_0000		        CODE_OVLY		045F
                               _argv	    C:\CirrusDSP\lib\simulator_stack	      simulator_stack_GEN_0000		                X		0901
                            _c_stack	    C:\CirrusDSP\lib\simulator_stack	      simulator_stack_GEN_0000		                X		0101
-                            _strcpy	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0415
-                        _strcpy_x2x	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0415
-                             __udiv	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		035A
-                      comparation_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		0381
-                      comparation_1	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		0389
-                      comparation_2	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		039C
-                      comparation_3	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03A5
-                             else_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03AB
-                    elsecondition_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03B6
-                     endcondition_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03B7
-                            endif_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03AB
-                              for_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		0391
-                          for_end_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03BB
-                             land_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		038A
-                              lor_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03A6
-                            while_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		0374
-                        while_end_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		0390
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	                        __INIT		             CODE		043F
-        _cl_wavread_bits_per_sample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	cl_wavread_bits_per_sample_GEN_0000		        CODE_OVLY		0424
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	                        __INIT		             CODE		043F
-                  _cl_wavread_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	     cl_wavread_close_GEN_0000		        CODE_OVLY		0427
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	                        __INIT		             CODE		043F
-             _cl_wavread_frame_rate	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	cl_wavread_frame_rate_GEN_0000		        CODE_OVLY		042A
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	                        __INIT		             CODE		043F
-       _cl_wavread_number_of_frames	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	cl_wavread_number_of_frames_GEN_0000		        CODE_OVLY		042D
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	                        __INIT		             CODE		043F
-                   _cl_wavread_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	      cl_wavread_open_GEN_0000		        CODE_OVLY		0430
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	                        __INIT		             CODE		043F
-             _cl_wavread_recvsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	cl_wavread_recvsample_GEN_0000		        CODE_OVLY		0433
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	                        __INIT		             CODE		043F
-                 _cl_wavwrite_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	    cl_wavwrite_close_GEN_0000		        CODE_OVLY		0436
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	                        __INIT		             CODE		043F
-                  _cl_wavwrite_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	     cl_wavwrite_open_GEN_0000		        CODE_OVLY		0439
-                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	                        __INIT		             CODE		043F
-            _cl_wavwrite_sendsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	cl_wavwrite_sendsample_GEN_0000		        CODE_OVLY		043C
+                            _strcpy	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0454
+                        _strcpy_x2x	         C:\CirrusDSP\lib\strcpy_x2x	           strcpy_x2x_GEN_0000		        CODE_OVLY		0454
+                             __udiv	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03A0
+                      comparation_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03C7
+                      comparation_1	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03CF
+                      comparation_2	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03E2
+                      comparation_3	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03EB
+                             else_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03F1
+                    elsecondition_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03FC
+                     endcondition_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03FD
+                            endif_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03F1
+                              for_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03D7
+                          for_end_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		0401
+                             land_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03D0
+                              lor_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03EC
+                            while_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03BA
+                        while_end_0	               C:\CirrusDSP\lib\udiv	                 udiv_GEN_0000		        CODE_OVLY		03D6
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	                        __INIT		             CODE		047E
+        _cl_wavread_bits_per_sample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_bits_per_sample	cl_wavread_bits_per_sample_GEN_0000		        CODE_OVLY		0463
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	                        __INIT		             CODE		047E
+                  _cl_wavread_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_close	     cl_wavread_close_GEN_0000		        CODE_OVLY		0466
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	                        __INIT		             CODE		047E
+             _cl_wavread_frame_rate	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_frame_rate	cl_wavread_frame_rate_GEN_0000		        CODE_OVLY		0469
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	                        __INIT		             CODE		047E
+       _cl_wavread_number_of_frames	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_number_of_frames	cl_wavread_number_of_frames_GEN_0000		        CODE_OVLY		046C
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	                        __INIT		             CODE		047E
+                   _cl_wavread_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_open	      cl_wavread_open_GEN_0000		        CODE_OVLY		046F
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	                        __INIT		             CODE		047E
+             _cl_wavread_recvsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavread_recvsample	cl_wavread_recvsample_GEN_0000		        CODE_OVLY		0472
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	                        __INIT		             CODE		047E
+                 _cl_wavwrite_close	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_close	    cl_wavwrite_close_GEN_0000		        CODE_OVLY		0475
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	                        __INIT		             CODE		047E
+                  _cl_wavwrite_open	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_open	     cl_wavwrite_open_GEN_0000		        CODE_OVLY		0478
+                         _STDIO_EQU	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	                        __INIT		             CODE		047E
+            _cl_wavwrite_sendsample	C:\CirrusDSP\lib\dsplib\crystal32\cl_wavwrite_sendsample	cl_wavwrite_sendsample_GEN_0000		        CODE_OVLY		047B
 
 ----------- module main -----------
 
 LOCAL SYMBOL								TYPE		VALUE
 
-                      _INITIAL_GAIN		RELOCATABLE		00FB
+                        _INPUT_GAIN		RELOCATABLE		00FB
                               _MODE		RELOCATABLE		00FC
-                     __epilogue_196		RELOCATABLE		0357
-                     __epilogue_198		RELOCATABLE		02D1
-                     __epilogue_200		RELOCATABLE		00C9
+                     __epilogue_196		RELOCATABLE		039D
+                     __epilogue_198		RELOCATABLE		0317
+                     __epilogue_200		RELOCATABLE		010F
                __extractedConst_0_1		RELOCATABLE		00FD
                __extractedConst_1_1		RELOCATABLE		00FE
                __extractedConst_2_1		RELOCATABLE		00FF
@@ -1420,9 +1434,9 @@ LOCAL SYMBOL								TYPE		VALUE
                _coefficients_3k_hpf		RELOCATABLE		00D7
                _coefficients_5k_hpf		RELOCATABLE		00DD
                               _main		RELOCATABLE		0001
-                        _processing		RELOCATABLE		00CC
+                        _processing		RELOCATABLE		0112
                       _sampleBuffer		RELOCATABLE		0001
-                  _second_order_IIR		RELOCATABLE		02D4
+                  _second_order_IIR		RELOCATABLE		031A
                          _temp_left		RELOCATABLE		0051
                       _temp_nizL11k		RELOCATABLE		0061
                        _temp_nizL3k		RELOCATABLE		0071
@@ -1443,229 +1457,242 @@ LOCAL SYMBOL								TYPE		VALUE
                         _y_history3		RELOCATABLE		00F5
                         _y_history4		RELOCATABLE		00F7
                         _y_history5		RELOCATABLE		00F9
-                        cline_100_0		RELOCATABLE		01B2
-                        cline_101_0		RELOCATABLE		01B7
-                        cline_102_0		RELOCATABLE		01BC
-                        cline_103_0		RELOCATABLE		01C6
-                        cline_104_0		RELOCATABLE		01CB
-                        cline_105_0		RELOCATABLE		01D0
-                        cline_108_0		RELOCATABLE		01D9
-                        cline_109_0		RELOCATABLE		01DC
-                        cline_110_0		RELOCATABLE		01DF
-                        cline_111_0		RELOCATABLE		01E2
-                        cline_112_0		RELOCATABLE		01E5
-                        cline_113_0		RELOCATABLE		01E8
-                        cline_114_0		RELOCATABLE		01EB
-                        cline_115_0		RELOCATABLE		01EE
-                        cline_118_0		RELOCATABLE		01F2
-                        cline_121_0		RELOCATABLE		01F6
-                        cline_121_1		RELOCATABLE		024D
-                        cline_123_0		RELOCATABLE		01FC
-                        cline_124_0		RELOCATABLE		0202
-                        cline_125_0		RELOCATABLE		0208
-                        cline_126_0		RELOCATABLE		020E
-                        cline_127_0		RELOCATABLE		0214
-                        cline_128_0		RELOCATABLE		0219
-                        cline_129_0		RELOCATABLE		021E
-                        cline_130_0		RELOCATABLE		0223
-                        cline_131_0		RELOCATABLE		0228
-                        cline_132_0		RELOCATABLE		022D
-                        cline_133_0		RELOCATABLE		0232
-                        cline_134_0		RELOCATABLE		0237
-                        cline_135_0		RELOCATABLE		023C
-                        cline_136_0		RELOCATABLE		0241
-                        cline_137_0		RELOCATABLE		0246
-                        cline_139_0		RELOCATABLE		0251
-                        cline_142_0		RELOCATABLE		0255
-                        cline_142_1		RELOCATABLE		029C
-                        cline_144_0		RELOCATABLE		025B
-                        cline_145_0		RELOCATABLE		0261
-                        cline_146_0		RELOCATABLE		0267
-                        cline_147_0		RELOCATABLE		026D
-                        cline_148_0		RELOCATABLE		0272
-                        cline_149_0		RELOCATABLE		0277
-                        cline_150_0		RELOCATABLE		027C
-                        cline_151_0		RELOCATABLE		0281
-                        cline_152_0		RELOCATABLE		0286
-                        cline_153_0		RELOCATABLE		028B
-                        cline_154_0		RELOCATABLE		0290
-                        cline_155_0		RELOCATABLE		0295
-                        cline_159_0		RELOCATABLE		02A0
-                        cline_159_1		RELOCATABLE		02D0
-                        cline_161_0		RELOCATABLE		02AB
-                        cline_162_0		RELOCATABLE		02B6
-                        cline_163_0		RELOCATABLE		02BB
-                        cline_164_0		RELOCATABLE		02C0
-                        cline_165_0		RELOCATABLE		02C5
-                        cline_166_0		RELOCATABLE		02CA
-                        cline_170_0		RELOCATABLE		02D1
-                        cline_173_0		RELOCATABLE		0008
-                        cline_188_0		RELOCATABLE		000C
-                        cline_188_1		RELOCATABLE		0019
-                        cline_189_0		RELOCATABLE		0013
-                        cline_193_0		RELOCATABLE		0020
-                        cline_194_0		RELOCATABLE		0025
-                        cline_195_0		RELOCATABLE		0029
-                        cline_198_0		RELOCATABLE		002B
-                        cline_204_0		RELOCATABLE		002E
-                        cline_205_0		RELOCATABLE		0033
-                        cline_206_0		RELOCATABLE		0038
-                        cline_207_0		RELOCATABLE		003D
-                        cline_212_0		RELOCATABLE		0045
-                        cline_213_0		RELOCATABLE		0050
-                        cline_214_0		RELOCATABLE		0054
-                        cline_217_0		RELOCATABLE		0056
-                        cline_230_0		RELOCATABLE		0061
-                        cline_230_1		RELOCATABLE		00C1
-                        cline_232_0		RELOCATABLE		0065
-                        cline_232_1		RELOCATABLE		008D
-                        cline_234_0		RELOCATABLE		006E
-                        cline_234_1		RELOCATABLE		0087
-                        cline_236_0		RELOCATABLE		0073
-                        cline_237_0		RELOCATABLE		0080
-                        cline_241_0		RELOCATABLE		008E
-                        cline_243_0		RELOCATABLE		0092
-                        cline_243_1		RELOCATABLE		00BA
-                        cline_245_0		RELOCATABLE		009B
-                        cline_245_1		RELOCATABLE		00B4
-                        cline_247_0		RELOCATABLE		00A8
-                        cline_248_0		RELOCATABLE		00AD
-                        cline_256_0		RELOCATABLE		00C4
-                        cline_257_0		RELOCATABLE		00C7
-                        cline_260_0		RELOCATABLE		00C9
-                         cline_42_0		RELOCATABLE		02DF
-                         cline_43_0		RELOCATABLE		02E4
-                         cline_45_0		RELOCATABLE		02F2
-                         cline_46_0		RELOCATABLE		0304
-                         cline_47_0		RELOCATABLE		0315
-                         cline_48_0		RELOCATABLE		0327
-                         cline_49_0		RELOCATABLE		0338
-                         cline_51_0		RELOCATABLE		033F
-                         cline_52_0		RELOCATABLE		0346
-                         cline_53_0		RELOCATABLE		034D
-                         cline_54_0		RELOCATABLE		0352
-                         cline_56_0		RELOCATABLE		0357
-                         cline_59_0		RELOCATABLE		00CF
-                         cline_61_0		RELOCATABLE		00D2
-                         cline_62_0		RELOCATABLE		00D5
-                         cline_63_0		RELOCATABLE		00D8
-                         cline_64_0		RELOCATABLE		00DB
-                         cline_65_0		RELOCATABLE		00DE
-                         cline_68_0		RELOCATABLE		00E1
-                         cline_69_0		RELOCATABLE		00E4
-                         cline_70_0		RELOCATABLE		00E7
-                         cline_71_0		RELOCATABLE		00EA
-                         cline_72_0		RELOCATABLE		00ED
-                         cline_73_0		RELOCATABLE		00F0
-                         cline_74_0		RELOCATABLE		00F3
-                         cline_75_0		RELOCATABLE		00F6
-                         cline_80_0		RELOCATABLE		00FA
-                         cline_80_1		RELOCATABLE		01D6
-                         cline_82_0		RELOCATABLE		0105
-                         cline_83_0		RELOCATABLE		0110
-                         cline_84_0		RELOCATABLE		0118
-                         cline_85_0		RELOCATABLE		0120
-                         cline_86_0		RELOCATABLE		012E
-                         cline_87_0		RELOCATABLE		013C
-                         cline_88_0		RELOCATABLE		014A
-                         cline_89_0		RELOCATABLE		014F
-                         cline_90_0		RELOCATABLE		0157
-                         cline_91_0		RELOCATABLE		0165
-                         cline_92_0		RELOCATABLE		016A
-                         cline_93_0		RELOCATABLE		0172
-                         cline_94_0		RELOCATABLE		0180
-                         cline_95_0		RELOCATABLE		0185
-                         cline_96_0		RELOCATABLE		018D
-                         cline_97_0		RELOCATABLE		019B
-                         cline_98_0		RELOCATABLE		01A0
-                         cline_99_0		RELOCATABLE		01A8
-                              dummy		ABSOLUTE		041C
-                             else_0		RELOCATABLE		024D
-                             else_1		RELOCATABLE		029C
-                             else_2		RELOCATABLE		002B
-                             else_3		RELOCATABLE		0056
-                            endif_0		RELOCATABLE		02D0
-                            endif_1		RELOCATABLE		02D0
-                            endif_2		RELOCATABLE		002B
-                            endif_3		RELOCATABLE		0056
-                              for_5		RELOCATABLE		0059
-                              for_7		RELOCATABLE		0068
-                              for_9		RELOCATABLE		0095
-                          for_end_0		RELOCATABLE		01D6
-                          for_end_1		RELOCATABLE		024C
-                          for_end_2		RELOCATABLE		029B
-                          for_end_3		RELOCATABLE		02D0
-                          for_end_4		RELOCATABLE		0019
-                          for_end_5		RELOCATABLE		00C1
-                          for_end_6		RELOCATABLE		008D
-                          for_end_7		RELOCATABLE		0087
-                          for_end_8		RELOCATABLE		00BA
-                          for_end_9		RELOCATABLE		00B4
-                 init_latch_label_0		RELOCATABLE		01D0
-                 init_latch_label_1		RELOCATABLE		0246
-                 init_latch_label_2		RELOCATABLE		0295
-                 init_latch_label_3		RELOCATABLE		02CA
-                 init_latch_label_4		RELOCATABLE		0013
-                 init_latch_label_5		RELOCATABLE		0080
-                 init_latch_label_6		RELOCATABLE		0087
-                 init_latch_label_7		RELOCATABLE		00AD
-                 init_latch_label_8		RELOCATABLE		00B4
-                 init_latch_label_9		RELOCATABLE		00BA
-                     label_begin_92		RELOCATABLE		00FA
-                     label_begin_93		RELOCATABLE		01F6
-                     label_begin_94		RELOCATABLE		0255
-                     label_begin_95		RELOCATABLE		02A0
-                     label_begin_96		RELOCATABLE		000C
-                     label_begin_97		RELOCATABLE		0065
-                     label_begin_98		RELOCATABLE		0092
-                       label_end_92		RELOCATABLE		01D5
-                       label_end_93		RELOCATABLE		024B
-                       label_end_94		RELOCATABLE		029A
-                       label_end_95		RELOCATABLE		02CF
-                       label_end_96		RELOCATABLE		0018
-                       label_end_97		RELOCATABLE		008C
-                       label_end_98		RELOCATABLE		00B9
+                        cline_100_0		RELOCATABLE		01E6
+                        cline_101_0		RELOCATABLE		01EE
+                        cline_102_0		RELOCATABLE		01F8
+                        cline_103_0		RELOCATABLE		01FD
+                        cline_104_0		RELOCATABLE		0202
+                        cline_105_0		RELOCATABLE		020C
+                        cline_106_0		RELOCATABLE		0211
+                        cline_107_0		RELOCATABLE		0216
+                        cline_110_0		RELOCATABLE		021F
+                        cline_111_0		RELOCATABLE		0222
+                        cline_112_0		RELOCATABLE		0225
+                        cline_113_0		RELOCATABLE		0228
+                        cline_114_0		RELOCATABLE		022B
+                        cline_115_0		RELOCATABLE		022E
+                        cline_116_0		RELOCATABLE		0231
+                        cline_117_0		RELOCATABLE		0234
+                        cline_120_0		RELOCATABLE		0238
+                        cline_123_0		RELOCATABLE		023C
+                        cline_123_1		RELOCATABLE		0293
+                        cline_125_0		RELOCATABLE		0242
+                        cline_126_0		RELOCATABLE		0248
+                        cline_127_0		RELOCATABLE		024E
+                        cline_128_0		RELOCATABLE		0254
+                        cline_129_0		RELOCATABLE		025A
+                        cline_130_0		RELOCATABLE		025F
+                        cline_131_0		RELOCATABLE		0264
+                        cline_132_0		RELOCATABLE		0269
+                        cline_133_0		RELOCATABLE		026E
+                        cline_134_0		RELOCATABLE		0273
+                        cline_135_0		RELOCATABLE		0278
+                        cline_136_0		RELOCATABLE		027D
+                        cline_137_0		RELOCATABLE		0282
+                        cline_138_0		RELOCATABLE		0287
+                        cline_139_0		RELOCATABLE		028C
+                        cline_141_0		RELOCATABLE		0297
+                        cline_144_0		RELOCATABLE		029B
+                        cline_144_1		RELOCATABLE		02E2
+                        cline_146_0		RELOCATABLE		02A1
+                        cline_147_0		RELOCATABLE		02A7
+                        cline_148_0		RELOCATABLE		02AD
+                        cline_149_0		RELOCATABLE		02B3
+                        cline_150_0		RELOCATABLE		02B8
+                        cline_151_0		RELOCATABLE		02BD
+                        cline_152_0		RELOCATABLE		02C2
+                        cline_153_0		RELOCATABLE		02C7
+                        cline_154_0		RELOCATABLE		02CC
+                        cline_155_0		RELOCATABLE		02D1
+                        cline_156_0		RELOCATABLE		02D6
+                        cline_157_0		RELOCATABLE		02DB
+                        cline_161_0		RELOCATABLE		02E6
+                        cline_161_1		RELOCATABLE		0316
+                        cline_163_0		RELOCATABLE		02F1
+                        cline_164_0		RELOCATABLE		02FC
+                        cline_165_0		RELOCATABLE		0301
+                        cline_166_0		RELOCATABLE		0306
+                        cline_167_0		RELOCATABLE		030B
+                        cline_168_0		RELOCATABLE		0310
+                        cline_172_0		RELOCATABLE		0317
+                        cline_175_0		RELOCATABLE		0008
+                        cline_190_0		RELOCATABLE		000C
+                        cline_190_1		RELOCATABLE		0028
+                        cline_193_0		RELOCATABLE		0010
+                        cline_193_1		RELOCATABLE		0022
+                        cline_195_0		RELOCATABLE		001C
+                        cline_199_0		RELOCATABLE		002D
+                        cline_199_1		RELOCATABLE		005F
+                        cline_201_0		RELOCATABLE		0033
+                        cline_202_0		RELOCATABLE		0039
+                        cline_203_0		RELOCATABLE		003F
+                        cline_204_0		RELOCATABLE		0045
+                        cline_205_0		RELOCATABLE		004B
+                        cline_206_0		RELOCATABLE		0051
+                        cline_207_0		RELOCATABLE		0057
+                        cline_208_0		RELOCATABLE		0059
+                        cline_213_0		RELOCATABLE		0066
+                        cline_214_0		RELOCATABLE		006B
+                        cline_215_0		RELOCATABLE		006F
+                        cline_218_0		RELOCATABLE		0071
+                        cline_224_0		RELOCATABLE		0074
+                        cline_225_0		RELOCATABLE		0079
+                        cline_226_0		RELOCATABLE		007E
+                        cline_227_0		RELOCATABLE		0083
+                        cline_232_0		RELOCATABLE		008B
+                        cline_233_0		RELOCATABLE		0096
+                        cline_234_0		RELOCATABLE		009A
+                        cline_237_0		RELOCATABLE		009C
+                        cline_250_0		RELOCATABLE		00A7
+                        cline_250_1		RELOCATABLE		0107
+                        cline_252_0		RELOCATABLE		00AB
+                        cline_252_1		RELOCATABLE		00D3
+                        cline_254_0		RELOCATABLE		00B4
+                        cline_254_1		RELOCATABLE		00CD
+                        cline_256_0		RELOCATABLE		00B9
+                        cline_257_0		RELOCATABLE		00C6
+                        cline_261_0		RELOCATABLE		00D4
+                        cline_263_0		RELOCATABLE		00D8
+                        cline_263_1		RELOCATABLE		0100
+                        cline_265_0		RELOCATABLE		00E1
+                        cline_265_1		RELOCATABLE		00FA
+                        cline_267_0		RELOCATABLE		00EE
+                        cline_268_0		RELOCATABLE		00F3
+                        cline_276_0		RELOCATABLE		010A
+                        cline_277_0		RELOCATABLE		010D
+                        cline_280_0		RELOCATABLE		010F
+                         cline_44_0		RELOCATABLE		0325
+                         cline_45_0		RELOCATABLE		032A
+                         cline_47_0		RELOCATABLE		0338
+                         cline_48_0		RELOCATABLE		034A
+                         cline_49_0		RELOCATABLE		035B
+                         cline_50_0		RELOCATABLE		036D
+                         cline_51_0		RELOCATABLE		037E
+                         cline_53_0		RELOCATABLE		0385
+                         cline_54_0		RELOCATABLE		038C
+                         cline_55_0		RELOCATABLE		0393
+                         cline_56_0		RELOCATABLE		0398
+                         cline_58_0		RELOCATABLE		039D
+                         cline_61_0		RELOCATABLE		0115
+                         cline_63_0		RELOCATABLE		0118
+                         cline_64_0		RELOCATABLE		011B
+                         cline_65_0		RELOCATABLE		011E
+                         cline_66_0		RELOCATABLE		0121
+                         cline_67_0		RELOCATABLE		0124
+                         cline_70_0		RELOCATABLE		0127
+                         cline_71_0		RELOCATABLE		012A
+                         cline_72_0		RELOCATABLE		012D
+                         cline_73_0		RELOCATABLE		0130
+                         cline_74_0		RELOCATABLE		0133
+                         cline_75_0		RELOCATABLE		0136
+                         cline_76_0		RELOCATABLE		0139
+                         cline_77_0		RELOCATABLE		013C
+                         cline_82_0		RELOCATABLE		0140
+                         cline_82_1		RELOCATABLE		021C
+                         cline_84_0		RELOCATABLE		014B
+                         cline_85_0		RELOCATABLE		0156
+                         cline_86_0		RELOCATABLE		015E
+                         cline_87_0		RELOCATABLE		0166
+                         cline_88_0		RELOCATABLE		0174
+                         cline_89_0		RELOCATABLE		0182
+                         cline_90_0		RELOCATABLE		0190
+                         cline_91_0		RELOCATABLE		0195
+                         cline_92_0		RELOCATABLE		019D
+                         cline_93_0		RELOCATABLE		01AB
+                         cline_94_0		RELOCATABLE		01B0
+                         cline_95_0		RELOCATABLE		01B8
+                         cline_96_0		RELOCATABLE		01C6
+                         cline_97_0		RELOCATABLE		01CB
+                         cline_98_0		RELOCATABLE		01D3
+                         cline_99_0		RELOCATABLE		01E1
+                              dummy		ABSOLUTE		045B
+                             else_0		RELOCATABLE		0293
+                             else_1		RELOCATABLE		02E2
+                             else_2		RELOCATABLE		0071
+                             else_3		RELOCATABLE		009C
+                            endif_0		RELOCATABLE		0316
+                            endif_1		RELOCATABLE		0316
+                            endif_2		RELOCATABLE		0071
+                            endif_3		RELOCATABLE		009C
+                             for_11		RELOCATABLE		00DB
+                              for_7		RELOCATABLE		009F
+                              for_9		RELOCATABLE		00AE
+                          for_end_0		RELOCATABLE		021C
+                          for_end_1		RELOCATABLE		0292
+                         for_end_10		RELOCATABLE		0100
+                         for_end_11		RELOCATABLE		00FA
+                          for_end_2		RELOCATABLE		02E1
+                          for_end_3		RELOCATABLE		0316
+                          for_end_4		RELOCATABLE		0028
+                          for_end_5		RELOCATABLE		0022
+                          for_end_6		RELOCATABLE		005F
+                          for_end_7		RELOCATABLE		0107
+                          for_end_8		RELOCATABLE		00D3
+                          for_end_9		RELOCATABLE		00CD
+                 init_latch_label_0		RELOCATABLE		0216
+                 init_latch_label_1		RELOCATABLE		028C
+                init_latch_label_10		RELOCATABLE		00FA
+                init_latch_label_11		RELOCATABLE		0100
+                 init_latch_label_2		RELOCATABLE		02DB
+                 init_latch_label_3		RELOCATABLE		0310
+                 init_latch_label_4		RELOCATABLE		001C
+                 init_latch_label_5		RELOCATABLE		0022
+                 init_latch_label_6		RELOCATABLE		0059
+                 init_latch_label_7		RELOCATABLE		00C6
+                 init_latch_label_8		RELOCATABLE		00CD
+                 init_latch_label_9		RELOCATABLE		00F3
+                    label_begin_100		RELOCATABLE		00D8
+                     label_begin_92		RELOCATABLE		0140
+                     label_begin_93		RELOCATABLE		023C
+                     label_begin_94		RELOCATABLE		029B
+                     label_begin_95		RELOCATABLE		02E6
+                     label_begin_96		RELOCATABLE		0010
+                     label_begin_97		RELOCATABLE		000C
+                     label_begin_98		RELOCATABLE		002D
+                     label_begin_99		RELOCATABLE		00AB
+                      label_end_100		RELOCATABLE		00FF
+                       label_end_92		RELOCATABLE		021B
+                       label_end_93		RELOCATABLE		0291
+                       label_end_94		RELOCATABLE		02E0
+                       label_end_95		RELOCATABLE		0315
+                       label_end_96		RELOCATABLE		0021
+                       label_end_97		RELOCATABLE		0027
+                       label_end_98		RELOCATABLE		005E
+                       label_end_99		RELOCATABLE		00D2
 
 ----------- module crt0 -----------
 
 LOCAL SYMBOL								TYPE		VALUE
 
-                            __start		RELOCATABLE		041C
+                            __start		RELOCATABLE		045B
 
 ----------- module div -----------
 
 LOCAL SYMBOL								TYPE		VALUE
 
-                              __div		RELOCATABLE		03D4
-                       __epilogue_2		RELOCATABLE		0407
-                      comparation_0		RELOCATABLE		03E0
-                      comparation_1		RELOCATABLE		03E7
-                      comparation_2		RELOCATABLE		03F0
-                      comparation_3		RELOCATABLE		03F7
-                             else_0		RELOCATABLE		03EB
-                             else_1		RELOCATABLE		03FB
-                             else_2		RELOCATABLE		03FE
-                             else_3		RELOCATABLE		0401
-                             else_4		RELOCATABLE		0406
-                            endif_0		RELOCATABLE		03EB
-                            endif_1		RELOCATABLE		03FB
-                            endif_2		RELOCATABLE		03FE
-                            endif_3		RELOCATABLE		0401
-                             land_0		RELOCATABLE		03E8
-                             land_1		RELOCATABLE		03F8
+                              __div		RELOCATABLE		041A
+                       __epilogue_2		RELOCATABLE		044D
+                      comparation_0		RELOCATABLE		0426
+                      comparation_1		RELOCATABLE		042D
+                      comparation_2		RELOCATABLE		0436
+                      comparation_3		RELOCATABLE		043D
+                             else_0		RELOCATABLE		0431
+                             else_1		RELOCATABLE		0441
+                             else_2		RELOCATABLE		0444
+                             else_3		RELOCATABLE		0447
+                             else_4		RELOCATABLE		044C
+                            endif_0		RELOCATABLE		0431
+                            endif_1		RELOCATABLE		0441
+                            endif_2		RELOCATABLE		0444
+                            endif_3		RELOCATABLE		0447
+                             land_0		RELOCATABLE		042E
+                             land_1		RELOCATABLE		043E
 
 ----------- module exit -----------
 
 LOCAL SYMBOL								TYPE		VALUE
 
-                              _exit		RELOCATABLE		0420
-
------------ module memset_x -----------
-
-LOCAL SYMBOL								TYPE		VALUE
-
-                            _memset		RELOCATABLE		040E
-                          _memset_x		RELOCATABLE		040E
+                              _exit		RELOCATABLE		045F
 
 ----------- module simulator_stack -----------
 
@@ -1678,28 +1705,28 @@ LOCAL SYMBOL								TYPE		VALUE
 
 LOCAL SYMBOL								TYPE		VALUE
 
-                            _strcpy		RELOCATABLE		0415
-                        _strcpy_x2x		RELOCATABLE		0415
+                            _strcpy		RELOCATABLE		0454
+                        _strcpy_x2x		RELOCATABLE		0454
 
 ----------- module udiv -----------
 
 LOCAL SYMBOL								TYPE		VALUE
 
-                             __udiv		RELOCATABLE		035A
-                      comparation_0		RELOCATABLE		0381
-                      comparation_1		RELOCATABLE		0389
-                      comparation_2		RELOCATABLE		039C
-                      comparation_3		RELOCATABLE		03A5
-                             else_0		RELOCATABLE		03AB
-                    elsecondition_0		RELOCATABLE		03B6
-                     endcondition_0		RELOCATABLE		03B7
-                            endif_0		RELOCATABLE		03AB
-                              for_0		RELOCATABLE		0391
-                          for_end_0		RELOCATABLE		03BB
-                             land_0		RELOCATABLE		038A
-                              lor_0		RELOCATABLE		03A6
-                            while_0		RELOCATABLE		0374
-                        while_end_0		RELOCATABLE		0390
+                             __udiv		RELOCATABLE		03A0
+                      comparation_0		RELOCATABLE		03C7
+                      comparation_1		RELOCATABLE		03CF
+                      comparation_2		RELOCATABLE		03E2
+                      comparation_3		RELOCATABLE		03EB
+                             else_0		RELOCATABLE		03F1
+                    elsecondition_0		RELOCATABLE		03FC
+                     endcondition_0		RELOCATABLE		03FD
+                            endif_0		RELOCATABLE		03F1
+                              for_0		RELOCATABLE		03D7
+                          for_end_0		RELOCATABLE		0401
+                             land_0		RELOCATABLE		03D0
+                              lor_0		RELOCATABLE		03EC
+                            while_0		RELOCATABLE		03BA
+                        while_end_0		RELOCATABLE		03D6
 
 ----------- module cl_wavread_bits_per_sample -----------
 
@@ -1746,8 +1773,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-        _cl_wavread_bits_per_sample		RELOCATABLE		0424
+                         _STDIO_EQU		RELOCATABLE		047E
+        _cl_wavread_bits_per_sample		RELOCATABLE		0463
 
 ----------- module cl_wavread_close -----------
 
@@ -1794,8 +1821,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-                  _cl_wavread_close		RELOCATABLE		0427
+                         _STDIO_EQU		RELOCATABLE		047E
+                  _cl_wavread_close		RELOCATABLE		0466
 
 ----------- module cl_wavread_frame_rate -----------
 
@@ -1842,8 +1869,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-             _cl_wavread_frame_rate		RELOCATABLE		042A
+                         _STDIO_EQU		RELOCATABLE		047E
+             _cl_wavread_frame_rate		RELOCATABLE		0469
 
 ----------- module cl_wavread_number_of_frames -----------
 
@@ -1890,8 +1917,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-       _cl_wavread_number_of_frames		RELOCATABLE		042D
+                         _STDIO_EQU		RELOCATABLE		047E
+       _cl_wavread_number_of_frames		RELOCATABLE		046C
 
 ----------- module cl_wavread_open -----------
 
@@ -1938,8 +1965,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-                   _cl_wavread_open		RELOCATABLE		0430
+                         _STDIO_EQU		RELOCATABLE		047E
+                   _cl_wavread_open		RELOCATABLE		046F
 
 ----------- module cl_wavread_recvsample -----------
 
@@ -1986,8 +2013,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-             _cl_wavread_recvsample		RELOCATABLE		0433
+                         _STDIO_EQU		RELOCATABLE		047E
+             _cl_wavread_recvsample		RELOCATABLE		0472
 
 ----------- module cl_wavwrite_close -----------
 
@@ -2034,8 +2061,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-                 _cl_wavwrite_close		RELOCATABLE		0436
+                         _STDIO_EQU		RELOCATABLE		047E
+                 _cl_wavwrite_close		RELOCATABLE		0475
 
 ----------- module cl_wavwrite_open -----------
 
@@ -2082,8 +2109,8 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-                  _cl_wavwrite_open		RELOCATABLE		0439
+                         _STDIO_EQU		RELOCATABLE		047E
+                  _cl_wavwrite_open		RELOCATABLE		0478
 
 ----------- module cl_wavwrite_sendsample -----------
 
@@ -2130,5 +2157,5 @@ LOCAL SYMBOL								TYPE		VALUE
                       WAVWRITE_OPEN		ABSOLUTE		0300
              WAVWRITE_SAMPLE_NUMBER		ABSOLUTE		0303
                 WAVWRITE_SENDSAMPLE		ABSOLUTE		0302
-                         _STDIO_EQU		RELOCATABLE		043F
-            _cl_wavwrite_sendsample		RELOCATABLE		043C
+                         _STDIO_EQU		RELOCATABLE		047E
+            _cl_wavwrite_sendsample		RELOCATABLE		047B
