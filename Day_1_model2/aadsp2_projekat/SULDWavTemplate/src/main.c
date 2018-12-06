@@ -43,9 +43,9 @@ DSPaccum second_order_IIR(DSPfract input, DSPfract* coefficients, DSPfract* x_hi
 	DSPaccum output = 0;
 
 	output += *coefficients * input;        /* A0 * x(n)     */
-	output += *(coefficients + 1) * *x_history * 2; /* A1 * x(n-1)  * 2 jer su coeff[1] podeljeni sa 2*/
+	output += (*(coefficients + 1) * *x_history) << 1; /* A1 * x(n-1)  * 2 jer su coeff[1] podeljeni sa 2*/
 	output += *(coefficients + 2) * *(x_history + 1); /* A2 * x(n-2)   */
-	output -= *(coefficients + 4) * *y_history * 2; /* B1 * y(n-1) */
+	output -= (*(coefficients + 4) * *y_history) << 1; /* B1 * y(n-1) */
 	output -= *(coefficients + 5) * *(y_history + 1); /* B2 * y(n-2)   */
 
 	*(y_history + 1) = *y_history;    /* y(n-2) = y(n-1) */
@@ -76,33 +76,32 @@ void processing() {
 
 
 	// Napravio lpf i hpf za L i R
-	DSPint i;
-	for (i = 0; i < BLOCK_SIZE; i++)
+	for (DSPint i = 0; i < BLOCK_SIZE; i++)
 	{
 		*tempLptr = *SBPtr0++;
 		*tempRptr = *SBPtr1++;
 		*tempLptr = *tempLptr * INITIAL_GAIN;
 		*tempRptr = *tempRptr * INITIAL_GAIN;
-		*temp_nizL11k_ptr = second_order_IIR(*tempLptr++, coefficients_11k_lpf, x_history0, y_history0);
+		*temp_nizL11k_ptr = second_order_IIR(*tempLptr, coefficients_11k_lpf, x_history0, y_history0);
 		*temp_nizR11k_ptr = second_order_IIR(*tempRptr, coefficients_11k_lpf, x_history1, y_history1);
 		*temp_nizL5K_ptr = second_order_IIR(*tempLptr, coefficients_5k_hpf, x_history2, y_history2);
-		*tempLptr++;
+		tempLptr++;
 		*temp_nizL5K_ptr = *temp_nizL5K_ptr * FRACT_NUM(0.31622776601683794);
 		*temp_nizR5k_ptr = second_order_IIR(*tempRptr, coefficients_5k_hpf, x_history3, y_history3);
-		*tempRptr++;
+		tempRptr++;
 		*temp_nizR5k_ptr = *temp_nizR5k_ptr * FRACT_NUM(0.33496543915782767);
 		*temp_nizL3k_ptr = second_order_IIR(*temp_nizL11k_ptr, coefficients_3k_hpf, x_history4, y_history4);
-		*temp_nizL11k_ptr++;
+		temp_nizL11k_ptr++;
 		*temp_nizL3k_ptr = *temp_nizL3k_ptr * FRACT_NUM(0.6309573444801932);
 		*temp_nizR3k_ptr = second_order_IIR(*temp_nizR11k_ptr, coefficients_3k_hpf, x_history5, y_history5);
-		*temp_nizR11k_ptr++;
+		temp_nizR11k_ptr++;
 		*temp_nizR3k_ptr = *temp_nizR3k_ptr * FRACT_NUM(0.6382634861905486);
 		*temp_nizL3k_ptr = *temp_nizL3k_ptr + *temp_nizL5K_ptr;
-		*temp_nizL3k_ptr++;
-		*temp_nizL5K_ptr++;
+		temp_nizL3k_ptr++;
+		temp_nizL5K_ptr++;
 		*temp_nizR3k_ptr = *temp_nizR3k_ptr + *temp_nizR5k_ptr;
-		*temp_nizR3k_ptr++;
-		*temp_nizR5k_ptr++;
+		temp_nizR3k_ptr++;
+		temp_nizR5k_ptr++;
 	}
 
 	SBPtr0 = sampleBuffer[0];
@@ -117,47 +116,55 @@ void processing() {
 	// Ovde odmah povezujem na Ls i Rs izlaze
 	if (MODE == 320)
 	{
-		DSPint i;
-		for (i = 0; i < BLOCK_SIZE; i++)
+		for (DSPint i = 0; i < BLOCK_SIZE; i++)
 		{
 			*SBPtr0 = *temp_nizL3k_ptr;
 			*SBPtr1 = *temp_nizR3k_ptr;
 			*SBPtr2 = *temp_nizL11k_ptr;
 			*SBPtr3 = *temp_nizR11k_ptr;
 			*SBPtr4 = *temp_nizL5K_ptr;
-			*SBPtr0++;
-			*SBPtr1++;
-			*SBPtr2++;
-			*SBPtr3++;
-			*SBPtr4++;
-			*temp_nizL3k_ptr++;
-			*temp_nizR3k_ptr++;
-			*temp_nizL11k_ptr++;
-			*temp_nizR11k_ptr++;
-			*temp_nizL5K_ptr++;
+			SBPtr0++;
+			SBPtr1++;
+			SBPtr2++;
+			SBPtr3++;
+			SBPtr4++;
+			temp_nizL3k_ptr++;
+			temp_nizR3k_ptr++;
+			temp_nizL11k_ptr++;
+			temp_nizR11k_ptr++;
+			temp_nizL5K_ptr++;
 		}
 	} else if (MODE == 220)
 	{
-		DSPint i;
-		for (i = 0; i < BLOCK_SIZE; i++)
+		for (DSPint i = 0; i < BLOCK_SIZE; i++)
 		{
-			*SBPtr0++ = *temp_nizL3k_ptr++;
-			*SBPtr1++ = *temp_nizR3k_ptr++;
-			*SBPtr2++ = *temp_nizL11k_ptr++;
-			*SBPtr3++ = *temp_nizR11k_ptr++;
+			*SBPtr0 = *temp_nizL3k_ptr;
+			*SBPtr1 = *temp_nizR3k_ptr;
+			*SBPtr2 = *temp_nizL11k_ptr;
+			*SBPtr3 = *temp_nizR11k_ptr;
+			SBPtr0++;
+			SBPtr1++;
+			SBPtr2++;
+			SBPtr3++;
+			temp_nizL3k_ptr++;
+			temp_nizR3k_ptr++;
+			temp_nizL11k_ptr++;
+			temp_nizR11k_ptr++;
 		}
 	} else {
-		DSPint i;
-		for (i = 0; i < BLOCK_SIZE; i++)
+		for (DSPint i = 0; i < BLOCK_SIZE; i++)
 		{
-			*SBPtr0++ = *tempLptr++;
-			*SBPtr1++ = *tempRptr++;
+			*SBPtr0++ = *tempLptr;
+			*SBPtr1++ = *tempRptr;
+			SBPtr0++;
+			SBPtr1++;
+			tempLptr++;
+			tempRptr++;
 		}
 	}
 	
 	return;
 }
-
 
 int main(int argc, char *argv[])
  {

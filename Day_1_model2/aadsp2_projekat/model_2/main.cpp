@@ -42,9 +42,9 @@ DSPaccum second_order_IIR(DSPfract input, DSPfract* coefficients, DSPfract* x_hi
 	DSPaccum output = 0;
 
 	output += *coefficients * input;        /* A0 * x(n)     */
-	output += *(coefficients + 1) * *x_history * 2; /* A1 * x(n-1)  * 2 jer su coeff[1] podeljeni sa 2*/
+	output += (*(coefficients + 1) * *x_history) << 1; /* A1 * x(n-1)  * 2 jer su coeff[1] podeljeni sa 2*/
 	output += *(coefficients + 2) * *(x_history + 1); /* A2 * x(n-2)   */
-	output -= *(coefficients + 4) * *y_history * 2; /* B1 * y(n-1) */
+	output -= (*(coefficients + 4) * *y_history) << 1; /* B1 * y(n-1) */
 	output -= *(coefficients + 5) * *(y_history + 1); /* B2 * y(n-2)   */
 
 	*(y_history + 1) = *y_history;    /* y(n-2) = y(n-1) */
